@@ -54,7 +54,6 @@ export const projects: Project[] = [
     links: [
       { label: "Google Colab Codebase", url: "https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing" },
       { label: "Launch Demonstration Footage", url: "/projects/rocket.launch.MOV" },
-      { label: "Experimental & Calibration Logs", url: "https://docs.google.com/spreadsheets/d/1GZ_oA8uZZpWpOq7V8PbKMCz3gbvjFobtUqlkufEcfhU/edit?usp=sharing" }
     ]
   },
   
