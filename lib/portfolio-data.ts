@@ -42,7 +42,7 @@ export const projects: Project[] = [
     tags: ["Fluid Mechanics", "Thermodynamics", "Python (SciPy)", "Numerical Integration"],
     image: "/projects/butane-rocket.jpg",
     featured: true,
-    role: "MechE Lab Sophomore Final Project",
+    role: "MechE Sophomore Lab Final Project",
     href: "", 
     outcomes: [
       "Developed a custom variable-mass rocket flight simulator in Python using multi-stage Euler integration with a 5 ms timestep to model coupled thermodynamic and ballistic flight behavior.",
