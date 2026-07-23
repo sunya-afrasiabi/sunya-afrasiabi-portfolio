@@ -25,10 +25,11 @@ export type Project = {
   href?: string
   role?: string
   outcomes?: string[]
+  links?: { label: string; url: string }[]
 }
 
 export const projects: Project[] = [
-{
+  {
     slug: "butane-rocket-targeting",
     year: "Spring 2026",
     title: "Multi-Phase Butane Rocket & Numerical Simulation",
@@ -56,7 +57,6 @@ export const projects: Project[] = [
       { label: "Launch Demonstration Footage", url: "/projects/rocket.launch.MOV" },
     ]
   },
-  
   {
     slug: "rover-chassis",
     year: "Spring 2026",
@@ -150,7 +150,7 @@ export const roles: Role[] = [
     period: "July 2026 - Present",
     title: "Mechanical Engineer (volunteer)",
     org: "Munch Industries Inc",
-    description; "Design and fabricate the awning and structural framework for Orble, an automated boba tea vending machine startup, using SolidWorks, laser cutting, 3D printing, and PVC fabrication",
+    description: "Design and fabricate the awning and structural framework for Orble, an automated boba tea vending machine startup, using SolidWorks, laser cutting, 3D printing, and PVC fabrication",
   },
   {
     period: "May 2026 - Present",
