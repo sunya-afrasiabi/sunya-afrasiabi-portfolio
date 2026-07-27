@@ -148,7 +148,7 @@ export type Role = {
 export const roles: Role[] = [
   {
     period: "July 2026 - Present",
-    title: "Mechanical Engineer (volunteer)",
+    title: "Mechanical Engineer",
     org: "Munch Industries Inc",
     description: "Design and fabricate the awning and structural framework for Orble, an automated boba tea vending machine startup, using SolidWorks, laser cutting, 3D printing, and PVC fabrication",
   },
