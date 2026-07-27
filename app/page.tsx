@@ -75,6 +75,52 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ================= WHAT I'M WORKING ON SECTION ================= */}
+      <section className="mx-auto max-w-5xl px-6 pb-24 lg:px-8">
+        <div className="mb-10 flex flex-col gap-4 border-t border-border pt-6">
+          <div>
+            <span className="font-sans text-xs uppercase tracking-[0.25em] text-primary">
+              Current Focus
+            </span>
+            <h2 className="mt-3 text-balance font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+              What I'm Working On
+            </h2>
+          </div>
+        </div>
+        
+        <div className="grid gap-6 md:grid-cols-3">
+          {/* Box 1 */}
+          <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
+            <h3 className="font-sans text-sm font-semibold uppercase tracking-wide text-foreground">
+              Dragonfly-Wing via Grasshopper/Rhino and 3D Printing – Ling Li Lab
+            </h3>
+            <p className="font-sans text-sm leading-relaxed text-muted-foreground">
+              Currently designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino, to be printed at Cornell University using powder-based 3D printers.
+            </p>
+          </div>
+
+          {/* Box 2 */}
+          <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
+            <h3 className="font-sans text-sm font-semibold uppercase tracking-wide text-foreground">
+              Tactical Fleet Telemetry Pipeline – Personal Project
+            </h3>
+            <p className="font-sans text-sm leading-relaxed text-muted-foreground">
+              Currently building a backend infrastructure that simulates a fleet of autonomous drones (or ground vehicles), ingests their live sensor data, processes it for anomalies (like overheating or off-path navigation), and stores it in a structured database for querying.
+            </p>
+          </div>
+
+          {/* Box 3 */}
+          <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
+            <h3 className="font-sans text-sm font-semibold uppercase tracking-wide text-foreground">
+              Awning of Bubble Tea Machine – Orble, Munch Industries Inc.
+            </h3>
+            <p className="font-sans text-sm leading-relaxed text-muted-foreground">
+              Currently manufacturing the awning of a bubble tea machine, that will be displayed on 30th Street Station, using a combination of PVC piping, 3D printing, laser cutting, and other manufacturing methods.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ================= SELECTED PROJECTS SECTION ================= */}
       <section className="mx-auto max-w-5xl px-6 pb-24 lg:px-8">
         <div className="mb-10 flex flex-col gap-4 border-t border-border pt-6 sm:flex-row sm:items-end sm:justify-between">
@@ -120,7 +166,7 @@ export default function HomePage() {
             <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
           </Link>
         </div>
-      
+        
         <div className="divide-y border-b border-border divide-border">
           {selectedWriting.map((item) => (
             <article key={item.slug} className="py-6 sm:py-8 first:pt-0">
