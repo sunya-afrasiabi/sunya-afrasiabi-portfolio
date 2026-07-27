@@ -3,26 +3,20 @@ import Image from "next/image"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
 import { ProjectCard } from "@/components/project-card"
 import { profile, projects, writing } from "@/lib/portfolio-data"
-
-// 1. IMPORT THE METADATA TYPE FROM NEXT
 import type { Metadata } from "next"
 
-// 2. EXPORT THE METADATA CONFIG TO SET THE TAB NAME TO "Home"
 export const metadata: Metadata = {
-  title: "Home", // This sets the browser tab name
+  title: "Home",
   description: "Personal portfolio of Sunya Afrasiabi.",
 }
 
 export default function HomePage() {
   const featured = projects.filter((p) => p.featured)
-  
-  // Extracting only featured essays
   const selectedWriting = writing.filter((w) => w.featured)
 
   return (
     <>
       <section className="mx-auto max-w-5xl px-6 pb-16 pt-16 lg:px-8 lg:pt-24">
-        {/* REMOVED THE PROFILE.MAJOR TEXT BLOCK FROM HERE */}
         <div className="flex flex-col-reverse items-start gap-6 sm:flex-row sm:items-center sm:gap-8">
           <h1 className="max-w-3xl text-balance font-heading text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
             {profile.name}
@@ -45,7 +39,6 @@ export default function HomePage() {
              and the role of technology in national defense and aerospace applications.
           </p>
           
-      {/* LINKS CONTAINER */}
           <div className="flex flex-col items-start gap-3 md:items-end">
             <Link
               href="/projects"
@@ -63,7 +56,6 @@ export default function HomePage() {
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
             </Link>
 
-            {/* UPDATED: "Get in touch" now matches perfectly with font weight and arrow animations */}
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 font-sans text-sm font-medium uppercase tracking-widest text-foreground transition-colors hover:text-primary"
@@ -91,9 +83,14 @@ export default function HomePage() {
         <div className="grid gap-6 md:grid-cols-3">
           {/* Box 1 */}
           <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
-            <h3 className="font-sans text-sm font-semibold uppercase tracking-wide text-foreground">
-              Dragonfly-Wing via Grasshopper/Rhino and 3D Printing – Ling Li Lab
-            </h3>
+            <div>
+              <h3 className="font-sans text-base font-semibold text-foreground">
+                Dragonfly-Wing via Grasshopper/Rhino and 3D Printing
+              </h3>
+              <p className="mt-1 font-sans text-xs text-muted-foreground">
+                Ling Li Lab
+              </p>
+            </div>
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
               Currently designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino, to be printed at Cornell University using powder-based 3D printers.
             </p>
@@ -101,9 +98,14 @@ export default function HomePage() {
 
           {/* Box 2 */}
           <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
-            <h3 className="font-sans text-sm font-semibold uppercase tracking-wide text-foreground">
-              Tactical Fleet Telemetry Pipeline – Personal Project
-            </h3>
+            <div>
+              <h3 className="font-sans text-base font-semibold text-foreground">
+                Tactical Fleet Telemetry Pipeline
+              </h3>
+              <p className="mt-1 font-sans text-xs text-muted-foreground">
+                Personal Project
+              </p>
+            </div>
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
               Currently building a backend infrastructure that simulates a fleet of autonomous drones (or ground vehicles), ingests their live sensor data, processes it for anomalies (like overheating or off-path navigation), and stores it in a structured database for querying.
             </p>
@@ -111,9 +113,14 @@ export default function HomePage() {
 
           {/* Box 3 */}
           <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
-            <h3 className="font-sans text-sm font-semibold uppercase tracking-wide text-foreground">
-              Awning of Bubble Tea Machine – Orble, Munch Industries Inc.
-            </h3>
+            <div>
+              <h3 className="font-sans text-base font-semibold text-foreground">
+                Awning of Bubble Tea Machine
+              </h3>
+              <p className="mt-1 font-sans text-xs text-muted-foreground">
+                Orble, Munch Industries Inc.
+              </p>
+            </div>
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
               Currently manufacturing the awning of a bubble tea machine, that will be displayed on 30th Street Station, using a combination of PVC piping, 3D printing, laser cutting, and other manufacturing methods.
             </p>
@@ -170,7 +177,7 @@ export default function HomePage() {
         <div className="divide-y border-b border-border divide-border">
           {selectedWriting.map((item) => (
             <article key={item.slug} className="py-6 sm:py-8 first:pt-0">
-              <Link href={`/writing`} className="group block space-y-2">
+              <Link href={item.href} target="_blank" rel="noopener noreferrer" className="group block space-y-2">
                 <div className="flex flex-col justify-between sm:flex-row sm:items-center">
                   <h3 className="text-xl font-medium tracking-tight text-foreground group-hover:text-primary transition-colors">
                     {item.title}
