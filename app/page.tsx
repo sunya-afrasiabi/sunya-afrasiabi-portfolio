@@ -85,14 +85,14 @@ export default function HomePage() {
           <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
             <div>
               <h3 className="font-sans text-base font-semibold text-foreground">
-                Dragonfly-Wing via Grasshopper/Rhino and 3D Printing
+                Dragonfly-Wing
               </h3>
               <p className="mt-1 font-sans text-xs text-muted-foreground">
                 Ling Li Lab
               </p>
             </div>
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              Currently designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino, to be printed at Cornell University using powder-based 3D printers.
+              Designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino, to be printed at Cornell University using powder-based 3D printers.
             </p>
           </div>
 
@@ -107,7 +107,7 @@ export default function HomePage() {
               </p>
             </div>
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              Currently building a backend infrastructure that simulates a fleet of autonomous drones (or ground vehicles), ingests their live sensor data, processes it for anomalies (like overheating or off-path navigation), and stores it in a structured database for querying.
+              Building a backend infrastructure that simulates a fleet of autonomous drones (or ground vehicles), ingests their live sensor data, processes it for anomalies (like overheating or off-path navigation), and stores it in a structured database for querying.
             </p>
           </div>
 
@@ -122,7 +122,7 @@ export default function HomePage() {
               </p>
             </div>
             <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              Currently manufacturing the awning of a bubble tea machine, that will be displayed on 30th Street Station, using a combination of PVC piping, 3D printing, laser cutting, and other manufacturing methods.
+              Manufacturing the awning of a bubble tea machine, that will be displayed on 30th Street Station, using a combination of PVC piping, 3D printing, laser cutting, and other manufacturing methods.
             </p>
           </div>
         </div>
