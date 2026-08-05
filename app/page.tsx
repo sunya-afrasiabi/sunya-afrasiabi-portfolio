@@ -85,7 +85,7 @@ export default function HomePage() {
           <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
             <div>
               <h3 className="font-semibold text-foreground">
-                Dragonfly-Wing via Grasshopper/Rhino and 3D Printing – Ling Li Lab
+                Dragonfly-Wing – Ling Li Lab
               </h3>
               <p className="mt-2 text-sm text-muted-foreground">
                 Currently designing and modeling a bio-inspired wing morphing
