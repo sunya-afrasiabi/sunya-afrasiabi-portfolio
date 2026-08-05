@@ -67,23 +67,25 @@ export default async function ProjectDetailPage({
         </ul>
       </header>
 
-      {/* DYNAMIC IMAGE WRAPPER: Smart containment framing tailored for portrait aspect properties */}
-      <div 
-        className={`mt-10 overflow-hidden rounded-md border border-border bg-secondary/30 flex items-center justify-center p-4 ${
-          isPortraitProject 
-            ? "max-w-md mx-auto aspect-[3/4] h-[550px]" 
-            : "w-full max-h-[450px] aspect-[3/2]"
-        }`}
-      >
-        <Image
-          src={project.image || "/placeholder.svg"}
-          alt={project.title}
-          width={1200}
-          height={800}
-          className="max-w-full max-h-full w-auto h-auto object-contain"
-          priority
-        />
-      </div>
+      {/* DYNAMIC IMAGE WRAPPER: Wrapped in conditional rendering */}
+      {project.image && (
+        <div 
+          className={`mt-10 overflow-hidden rounded-md border border-border bg-secondary/30 flex items-center justify-center p-4 ${
+            isPortraitProject 
+              ? "max-w-md mx-auto aspect-[3/4] h-[550px]" 
+              : "w-full max-h-[450px] aspect-[3/2]"
+          }`}
+        >
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={1200}
+            height={800}
+            className="max-w-full max-h-full w-auto h-auto object-contain"
+            priority
+          />
+        </div>
+      )}
 
       <div className="mt-10 grid gap-10 md:grid-cols-[1.6fr_1fr]">
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
