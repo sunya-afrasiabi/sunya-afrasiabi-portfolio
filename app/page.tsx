@@ -82,18 +82,26 @@ export default function HomePage() {
         
         <div className="grid gap-6 md:grid-cols-3">
           {/* Box 1 */}
-          <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
+          <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
             <div>
-              <h3 className="font-sans text-base font-semibold text-foreground">
-                Dragonfly-Wing
+              <h3 className="font-semibold text-foreground">
+                Dragonfly-Wing via Grasshopper/Rhino and 3D Printing – Ling Li Lab
               </h3>
-              <p className="mt-1 font-sans text-xs text-muted-foreground">
-                Ling Li Lab
+              <p className="mt-2 text-sm text-muted-foreground">
+                Currently designing and modeling a bio-inspired wing morphing
+                structure using Grasshopper and Rhino, to be printed at Cornell
+                University using powder-based 3D printers.
               </p>
             </div>
-            <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              Designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino, to be printed at Cornell University using powder-based 3D printers.
-            </p>
+            
+            {/* The New Learn More Link */}
+            <Link
+              href="/projects/dragonfly-wing"
+              className="group mt-6 inline-flex w-fit items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
+            >
+              Learn more
+              <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </Link>
           </div>
 
           {/* Box 2 */}
