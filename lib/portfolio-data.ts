@@ -69,7 +69,7 @@ export const projects: Project[] = [
     tags: ["Kinematics", "Stress/ Strain Optimization", "SolidWorks", "3D Printing"],
     image: "/projects/chassis.jpg",
     featured: true,
-    role: "Chassis Team, UPenn Mars Rover Club",
+    role: "Chassis Team | UPenn Mars Rover Club",
     outcomes: [
       "Designed precise SolidWorks suspension assemblies to eliminate kinematic interference throughout the full range of angular motion.",
       "Conducted stress, strain, and material analyses on suspension brackets to reduce weight while maintaining structural integrity under high-impact loading.",
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     tags: ["Fluid Mechanics", "Rapid Prototyping", "SolidWorks", "3D Printing"],
     image: "/projects/seed-cleaner.jpg",
     featured: true,
-    role: "Farm Committee, Engineers without Borders",
+    role: "Farm Committee | Engineers without Borders",
     outcomes: [
       "Automated post-harvest processing by separating viable seeds from lightweight chaff through vacuum-powered aspiration.",
       "Fabricated the system using rapid prototyping methods, combining wood framing, custom fasteners, and acrylic panels.",
@@ -110,11 +110,41 @@ export const projects: Project[] = [
     image: "",
     featured: false,
     outcomes: [
-"Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
-"Derived parametric equations governing vein taper, corrugation amplitude, cell spacing, and mass distribution for bio-inspired wing geometries.",
-"Developed fully parametric Rhino/Grasshopper models capable of generating biologically inspired wing architectures with configurable structural features.",
-"Optimized designs for powder-bed TPU additive manufacturing by evaluating minimum feature sizes, hollow channel dimensions, wall thicknesses, and powder evacuation constraints."
+    "Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
+    "Derived parametric equations governing vein taper, corrugation amplitude, cell spacing, and mass distribution for bio-inspired wing geometries.",
+    "Developed fully parametric Rhino/Grasshopper models capable of generating biologically inspired wing architectures with configurable structural features.",
+    "Optimized designs for powder-bed TPU additive manufacturing by evaluating minimum feature sizes, hollow channel dimensions, wall thicknesses, and powder evacuation constraints."
   
+    ]
+  },
+  {
+    slug: "npwee",
+    year: "Fall 2026",
+    role: "Radiation Subteam Lead | NASA Marshall Space Flight Center Sponsored Program",
+    title: "NASA L'SPACE Proposal Writing & Evaluation Experience",
+    description: "Led the radiation research effort as radiation subteam lead for our team's proposed lunar technology, contributing to technical research, systems engineering, proposal development, and NASA-style peer proposal evaluation.",
+    longDescription: [
+    "The NASA Proposal Writing and Evaluation Experience (NPWEE) Academy is a competitive engineering program sponsored by NASA's Marshall Space Flight Center that immerses students in developing technology proposals addressing real NASA mission needs. As the radiation subteam lead on an interdisciplinary team, I contributed to the development of a concept for advanced radiation shielding intended for future lunar applications. The project culminated in the submission of a complete NASA-style research proposal and technology development plan.",
+    "Rather than focusing solely on design, the program emphasized the complete engineering development process. Our team evaluated existing technologies, conducted literature reviews, compared design alternatives, considered manufacturing constraints, developed testing and validation plans, estimated project costs, assessed technical risks, and created a phased project schedule. My role focused on radiation shielding research, technical writing, and collaborating with teammates specializing in thermal analysis, CAD, simulations, and project management.",
+    "One of the most valuable aspects of the experience was learning how engineering ideas are communicated. We produced a professional proposal modeled after those submitted to NASA, requiring us to justify our concept, align it with NASA technology priorities, define measurable objectives, develop work packages, estimate budgets, and communicate complex technical ideas to reviewers. This significantly strengthened my technical writing and engineering communication skills.,"
+    "After submitting our proposal, participants were trained as proposal reviewers and served on a NASA-style peer review panel. Evaluating competing proposals using structured scoring criteria provided valuable insight into how engineering projects are assessed for technical merit, feasibility, innovation, and execution. Experiencing both the proposal development and evaluation processes fundamentally changed how I approach engineering communication and project planning.",
+    "Beyond the technical work, the program strengthened my ability to collaborate within a multidisciplinary engineering team operating in a virtual environment. Working alongside students with backgrounds in aerospace, mechanical engineering, materials science, and simulation reinforced the importance of interdisciplinary collaboration in solving complex engineering challenges.",
+    ],
+    tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
+    image: "",
+    featured: true,
+    outcomes: [
+    "Developed skills in:",
+    "Technical proposal writing",
+    "Systems engineering and technology development",
+    "Engineering research and literature review",
+    "Project planning and risk assessment",
+    "Technical communication",
+    "Cross-disciplinary collaboration",
+    "Proposal evaluation and peer review",
+    "Engineering decision-making",
+    "Scientific and technical documentation",
+
     ]
   },
 ]
@@ -140,8 +170,8 @@ export const writing: Writing[] = [
     featured: true,
   },
   {
-    slug: "wildlife-prevention",
-    title: "Aviation Solutions for Wildlife Prevention",
+    slug: "wildfire-prevention",
+    title: "Aviation Solutions for Wildfire Prevention",
     date: "May 2025",
     excerpt: "Investor-oriented whitepaper on UAVs, AI wildfire prediction, and aerospace innovations, framing $6.4B+ market opportunities and potential $5B annual cost savings. Co-authored as part of Wharton Undergraduate Aerospace Club.",
     href: "https://drive.google.com/file/d/1mxdoEXoXRByKiuIf6_fvRVWCfc1j1aYx/view?usp=sharing",
