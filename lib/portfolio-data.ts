@@ -96,6 +96,20 @@ export const projects: Project[] = [
       "Collaborated on a five-person team to deploy the machinery and construct a winter greenhouse enabling year-round crop cultivation.",
     ],
   },
+  {
+    slug: "dragonfly-wing",
+    year: "Current",
+    title: "Bio-Inspired Dragonfly Wing Morphing",
+    description: "Designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino for powder-based 3D printing.",
+    longDescription: [
+      "Working under the Ling Li Lab, I am currently designing and modeling a bio-inspired wing morphing structure. The goal of this project is to replicate the highly efficient, compliant mechanisms found in nature.",
+      "Using Grasshopper and Rhino, I am developing parametric models that allow for rapid iteration of the wing's cellular geometry. The final structures are slated to be manufactured at Cornell University utilizing advanced powder-based 3D printing techniques.",
+      // Add more paragraphs here as the project develops!
+    ],
+    tags: ["Grasshopper", "Rhino", "3D Printing", "Biomimicry"],
+    image: "/dragonfly-placeholder.jpg", // Replace with your actual image path when ready
+    featured: false,
+  },
 ]
 
 export type Writing = {
