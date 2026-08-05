@@ -102,13 +102,20 @@ export const projects: Project[] = [
     title: "Bio-Inspired Dragonfly Wing Morphing",
     description: "Designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino for powder-based 3D printing.",
     longDescription: [
-      "Working under the Ling Li Lab, I am currently designing and modeling a bio-inspired wing morphing structure. The goal of this project is to replicate the highly efficient, compliant mechanisms found in nature.",
-      "Using Grasshopper and Rhino, I am developing parametric models that allow for rapid iteration of the wing's cellular geometry. The final structures are slated to be manufactured at Cornell University utilizing advanced powder-based 3D printing techniques.",
-      // Add more paragraphs here as the project develops!
+    "I explored how insects deploy and control ultralight wings to develop bio-inspired structures for soft robotics and micro aerial vehicles. Beginning with an interdisciplinary literature review spanning insect physiology, aerodynamics, soft robotics, and additive manufacturing, I identified the biological mechanisms that make insect wings both lightweight and structurally efficient (including hydraulic hemolymph expansion, graded stiffness, corrugated geometries, and vein-membrane architectures) and translated these concepts into engineering design principles for deployable morphing wings.",
+    "I then transformed those principles into a fully parametric CAD workflow using Rhino and Grasshopper. By deriving analytical relationships for vein taper, corrugation amplitude, cell-density gradients, and inertial mass distribution, I developed a configurable wing-generation framework that enabled rapid design iteration while preserving the structural characteristics observed in biological wings.",
+    "I am currently working on ensuring the design can be physically manufactured. I am incorporating the constraints of powder-bed TPU additive manufacturing directly into the modeling process by iteratively optimizing hollow vein geometries, channel diameters, wall thicknesses, and overall wing dimensions to balance printability, structural integrity, and powder evacuation."
     ],
     tags: ["Grasshopper", "Rhino", "3D Printing", "Biomimicry"],
     image: "/dragonfly-placeholder.jpg", // Replace with your actual image path when ready
     featured: false,
+    outcomes: [
+"Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
+"Derived parametric equations governing vein taper, corrugation amplitude, cell spacing, and mass distribution for bio-inspired wing geometries.",
+"Developed fully parametric Rhino/Grasshopper models capable of generating biologically inspired wing architectures with configurable structural features.",
+"Optimized designs for powder-bed TPU additive manufacturing by evaluating minimum feature sizes, hollow channel dimensions, wall thicknesses, and powder evacuation constraints."
+  
+    ]
   },
 ]
 
