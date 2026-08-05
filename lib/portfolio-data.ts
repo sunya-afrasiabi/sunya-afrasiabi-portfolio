@@ -35,10 +35,10 @@ export const projects: Project[] = [
     title: "Multi-Phase Butane Rocket & Numerical Simulation",
     description: "Designed, simulated, and experimentally validated a variable-mass water rocket using iterative thermodynamic modeling for precise trajectory prediction and target acquisition.",
     longDescription: [
-    "As part of a three-person engineering team, we designed and optimized a butane-powered water rocket capable of navigating constrained flight paths and engaging targets under strict spatial clearance requirements. Our project used aerodynamic design, thermodynamic modeling, numerical simulation, and experimental validation to predict and optimize rocket trajectories.",
-    "My primary contribution was developing a custom Python simulation that modeled the rocket as a variable-mass dynamic system, integrating temperature-dependent butane vaporization, pressure-driven fluid expulsion, aerodynamic drag, and ballistic flight behavior. I implemented a multi-stage Euler integration solver to simulate thrust generation and trajectory evolution in real time, then calibrated drag coefficients, thermal efficiency factors, and propellant-loading models by comparing simulated predictions with experimental launch data.",
-    "I also reconstructed flight trajectories from launch videos using perspective-corrected kinematic tracking to improve the accuracy of our model. By analyzing apex height, velocity decay, and range performance, I identified previously unmodeled freeze-out behavior caused by insufficient thermal mass during butane vaporization. I incorporated these findings into empirical correction factors and optimization routines that significantly improved trajectory prediction and targeting consistency.",
-    "Together, we developed a multi-parameter optimization algorithm that evaluated launch angle, water mass, butane loading, and thermal buffering effects to identify launch configurations capable of clearing spatial obstacles while minimizing target error.",          
+      "As part of a three-person engineering team, we designed and optimized a butane-powered water rocket capable of navigating constrained flight paths and engaging targets under strict spatial clearance requirements. Our project used aerodynamic design, thermodynamic modeling, numerical simulation, and experimental validation to predict and optimize rocket trajectories.",
+      "My primary contribution was developing a custom Python simulation that modeled the rocket as a variable-mass dynamic system, integrating temperature-dependent butane vaporization, pressure-driven fluid expulsion, aerodynamic drag, and ballistic flight behavior. I implemented a multi-stage Euler integration solver to simulate thrust generation and trajectory evolution in real time, then calibrated drag coefficients, thermal efficiency factors, and propellant-loading models by comparing simulated predictions with experimental launch data.",
+      "I also reconstructed flight trajectories from launch videos using perspective-corrected kinematic tracking to improve the accuracy of our model. By analyzing apex height, velocity decay, and range performance, I identified previously unmodeled freeze-out behavior caused by insufficient thermal mass during butane vaporization. I incorporated these findings into empirical correction factors and optimization routines that significantly improved trajectory prediction and targeting consistency.",
+      "Together, we developed a multi-parameter optimization algorithm that evaluated launch angle, water mass, butane loading, and thermal buffering effects to identify launch configurations capable of clearing spatial obstacles while minimizing target error.",
     ],
     tags: ["Fluid Mechanics", "Thermodynamics", "Python (SciPy)", "Numerical Integration"],
     image: "/projects/butane-rocket.jpg",
@@ -102,19 +102,18 @@ export const projects: Project[] = [
     title: "Bio-Inspired Dragonfly Wing Morphing",
     description: "Designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino for powder-based 3D printing.",
     longDescription: [
-    "I explored how insects deploy and control ultralight wings to develop bio-inspired structures for soft robotics and micro aerial vehicles. Beginning with an interdisciplinary literature review spanning insect physiology, aerodynamics, soft robotics, and additive manufacturing, I identified the biological mechanisms that make insect wings both lightweight and structurally efficient (including hydraulic hemolymph expansion, graded stiffness, corrugated geometries, and vein-membrane architectures) and translated these concepts into engineering design principles for deployable morphing wings.",
-    "I then transformed those principles into a fully parametric CAD workflow using Rhino and Grasshopper. By deriving analytical relationships for vein taper, corrugation amplitude, cell-density gradients, and inertial mass distribution, I developed a configurable wing-generation framework that enabled rapid design iteration while preserving the structural characteristics observed in biological wings.",
-    "I am currently working on ensuring the design can be physically manufactured. I am incorporating the constraints of powder-bed TPU additive manufacturing directly into the modeling process by iteratively optimizing hollow vein geometries, channel diameters, wall thicknesses, and overall wing dimensions to balance printability, structural integrity, and powder evacuation."
+      "I explored how insects deploy and control ultralight wings to develop bio-inspired structures for soft robotics and micro aerial vehicles. Beginning with an interdisciplinary literature review spanning insect physiology, aerodynamics, soft robotics, and additive manufacturing, I identified the biological mechanisms that make insect wings both lightweight and structurally efficient (including hydraulic hemolymph expansion, graded stiffness, corrugated geometries, and vein-membrane architectures) and translated these concepts into engineering design principles for deployable morphing wings.",
+      "I then transformed those principles into a fully parametric CAD workflow using Rhino and Grasshopper. By deriving analytical relationships for vein taper, corrugation amplitude, cell-density gradients, and inertial mass distribution, I developed a configurable wing-generation framework that enabled rapid design iteration while preserving the structural characteristics observed in biological wings.",
+      "I am currently working on ensuring the design can be physically manufactured. I am incorporating the constraints of powder-bed TPU additive manufacturing directly into the modeling process by iteratively optimizing hollow vein geometries, channel diameters, wall thicknesses, and overall wing dimensions to balance printability, structural integrity, and powder evacuation."
     ],
     tags: ["Grasshopper", "Rhino", "3D Printing", "Biomimicry"],
     image: "",
     featured: false,
     outcomes: [
-    "Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
-    "Derived parametric equations governing vein taper, corrugation amplitude, cell spacing, and mass distribution for bio-inspired wing geometries.",
-    "Developed fully parametric Rhino/Grasshopper models capable of generating biologically inspired wing architectures with configurable structural features.",
-    "Optimized designs for powder-bed TPU additive manufacturing by evaluating minimum feature sizes, hollow channel dimensions, wall thicknesses, and powder evacuation constraints."
-  
+      "Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
+      "Derived parametric equations governing vein taper, corrugation amplitude, cell spacing, and mass distribution for bio-inspired wing geometries.",
+      "Developed fully parametric Rhino/Grasshopper models capable of generating biologically inspired wing architectures with configurable structural features.",
+      "Optimized designs for powder-bed TPU additive manufacturing by evaluating minimum feature sizes, hollow channel dimensions, wall thicknesses, and powder evacuation constraints."
     ]
   },
   {
@@ -124,27 +123,26 @@ export const projects: Project[] = [
     title: "NASA L'SPACE Proposal Writing & Evaluation Experience",
     description: "Led the radiation research effort as radiation subteam lead for our team's proposed lunar technology, contributing to technical research, systems engineering, proposal development, and NASA-style peer proposal evaluation.",
     longDescription: [
-    "The NASA Proposal Writing and Evaluation Experience (NPWEE) Academy is a competitive engineering program sponsored by NASA's Marshall Space Flight Center that immerses students in developing technology proposals addressing real NASA mission needs. As the radiation subteam lead on an interdisciplinary team, I contributed to the development of a concept for advanced radiation shielding intended for future lunar applications. The project culminated in the submission of a complete NASA-style research proposal and technology development plan.",
-    "Rather than focusing solely on design, the program emphasized the complete engineering development process. Our team evaluated existing technologies, conducted literature reviews, compared design alternatives, considered manufacturing constraints, developed testing and validation plans, estimated project costs, assessed technical risks, and created a phased project schedule. My role focused on radiation shielding research, technical writing, and collaborating with teammates specializing in thermal analysis, CAD, simulations, and project management.",
-    "One of the most valuable aspects of the experience was learning how engineering ideas are communicated. We produced a professional proposal modeled after those submitted to NASA, requiring us to justify our concept, align it with NASA technology priorities, define measurable objectives, develop work packages, estimate budgets, and communicate complex technical ideas to reviewers. This significantly strengthened my technical writing and engineering communication skills.,"
-    "After submitting our proposal, participants were trained as proposal reviewers and served on a NASA-style peer review panel. Evaluating competing proposals using structured scoring criteria provided valuable insight into how engineering projects are assessed for technical merit, feasibility, innovation, and execution. Experiencing both the proposal development and evaluation processes fundamentally changed how I approach engineering communication and project planning.",
-    "Beyond the technical work, the program strengthened my ability to collaborate within a multidisciplinary engineering team operating in a virtual environment. Working alongside students with backgrounds in aerospace, mechanical engineering, materials science, and simulation reinforced the importance of interdisciplinary collaboration in solving complex engineering challenges.",
+      "The NASA Proposal Writing and Evaluation Experience (NPWEE) Academy is a competitive engineering program sponsored by NASA's Marshall Space Flight Center that immerses students in developing technology proposals addressing real NASA mission needs. As the radiation subteam lead on an interdisciplinary team, I contributed to the development of a concept for advanced radiation shielding intended for future lunar applications. The project culminated in the submission of a complete NASA-style research proposal and technology development plan.",
+      "Rather than focusing solely on design, the program emphasized the complete engineering development process. Our team evaluated existing technologies, conducted literature reviews, compared design alternatives, considered manufacturing constraints, developed testing and validation plans, estimated project costs, assessed technical risks, and created a phased project schedule. My role focused on radiation shielding research, technical writing, and collaborating with teammates specializing in thermal analysis, CAD, simulations, and project management.",
+      "One of the most valuable aspects of the experience was learning how engineering ideas are communicated. We produced a professional proposal modeled after those submitted to NASA, requiring us to justify our concept, align it with NASA technology priorities, define measurable objectives, develop work packages, estimate budgets, and communicate complex technical ideas to reviewers. This significantly strengthened my technical writing and engineering communication skills.",
+      "After submitting our proposal, participants were trained as proposal reviewers and served on a NASA-style peer review panel. Evaluating competing proposals using structured scoring criteria provided valuable insight into how engineering projects are assessed for technical merit, feasibility, innovation, and execution. Experiencing both the proposal development and evaluation processes fundamentally changed how I approach engineering communication and project planning.",
+      "Beyond the technical work, the program strengthened my ability to collaborate within a multidisciplinary engineering team operating in a virtual environment. Working alongside students with backgrounds in aerospace, mechanical engineering, materials science, and simulation reinforced the importance of interdisciplinary collaboration in solving complex engineering challenges.",
     ],
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
     image: "",
     featured: true,
     outcomes: [
-    "Developed skills in:",
-    "Technical proposal writing",
-    "Systems engineering and technology development",
-    "Engineering research and literature review",
-    "Project planning and risk assessment",
-    "Technical communication",
-    "Cross-disciplinary collaboration",
-    "Proposal evaluation and peer review",
-    "Engineering decision-making",
-    "Scientific and technical documentation",
-
+      "Developed skills in:",
+      "Technical proposal writing",
+      "Systems engineering and technology development",
+      "Engineering research and literature review",
+      "Project planning and risk assessment",
+      "Technical communication",
+      "Cross-disciplinary collaboration",
+      "Proposal evaluation and peer review",
+      "Engineering decision-making",
+      "Scientific and technical documentation",
     ]
   },
 ]
