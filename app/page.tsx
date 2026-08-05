@@ -85,7 +85,7 @@ export default function HomePage() {
           <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
             <div>
               <h3 className="font-semibold text-foreground">
-                Dragonfly-Wing
+                Bio-Inspired Dragonfly Wing Morphing
               </h3>
               <p className="mt-1 font-sans text-xs text-muted-foreground">
                 Ling Li Lab, University of Pennsylvania
