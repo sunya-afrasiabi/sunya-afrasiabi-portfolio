@@ -78,6 +78,35 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "npwee",
+    year: "Fall 2026",
+    role: "Radiation Subteam Lead | NASA L'Space Program",
+    title: "NASA L'SPACE Proposal Writing & Evaluation Experience",
+    description: "Led the radiation research effort as radiation subteam lead for our team's proposed lunar technology, contributing to technical research, systems engineering, proposal development, and NASA-style peer proposal evaluation.",
+    longDescription: [
+      "The NASA Proposal Writing and Evaluation Experience (NPWEE) Academy is a competitive engineering program sponsored by NASA's Marshall Space Flight Center that immerses students in developing technology proposals addressing real NASA mission needs. As the radiation subteam lead on an interdisciplinary team, I contributed to the development of a concept for advanced radiation shielding intended for future lunar applications. The project culminated in the submission of a complete NASA-style research proposal and technology development plan.",
+      "Rather than focusing solely on design, the program emphasized the complete engineering development process. Our team evaluated existing technologies, conducted literature reviews, compared design alternatives, considered manufacturing constraints, developed testing and validation plans, estimated project costs, assessed technical risks, and created a phased project schedule. My role focused on radiation shielding research, technical writing, and collaborating with teammates specializing in thermal analysis, CAD, simulations, and project management.",
+      "One of the most valuable aspects of the experience was learning how engineering ideas are communicated. We produced a professional proposal modeled after those submitted to NASA, requiring us to justify our concept, align it with NASA technology priorities, define measurable objectives, develop work packages, estimate budgets, and communicate complex technical ideas to reviewers. This significantly strengthened my technical writing and engineering communication skills.",
+      "After submitting our proposal, participants were trained as proposal reviewers and served on a NASA-style peer review panel. Evaluating competing proposals using structured scoring criteria provided valuable insight into how engineering projects are assessed for technical merit, feasibility, innovation, and execution. Experiencing both the proposal development and evaluation processes fundamentally changed how I approach engineering communication and project planning.",
+      "Beyond the technical work, the program strengthened my ability to collaborate within a multidisciplinary engineering team operating in a virtual environment. Working alongside students with backgrounds in aerospace, mechanical engineering, materials science, and simulation reinforced the importance of interdisciplinary collaboration in solving complex engineering challenges.",
+    ],
+    tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
+    image: "",
+    featured: false,
+    outcomes: [
+      "Developed skills in:",
+      "Technical proposal writing",
+      "Systems engineering and technology development",
+      "Engineering research and literature review",
+      "Project planning and risk assessment",
+      "Technical communication",
+      "Cross-disciplinary collaboration",
+      "Proposal evaluation and peer review",
+      "Engineering decision-making",
+      "Scientific and technical documentation",
+    ]
+  },
+  {
     slug: "seed-cleaner",
     year: "Fall 2025",
     title: "Vacuum-powered Seed Cleaner",
@@ -116,35 +145,7 @@ export const projects: Project[] = [
       "Optimized designs for powder-bed TPU additive manufacturing by evaluating minimum feature sizes, hollow channel dimensions, wall thicknesses, and powder evacuation constraints."
     ]
   },
-  {
-    slug: "npwee",
-    year: "Fall 2026",
-    role: "Radiation Subteam Lead | NASA Marshall Space Flight Center Sponsored Program",
-    title: "NASA L'SPACE Proposal Writing & Evaluation Experience",
-    description: "Led the radiation research effort as radiation subteam lead for our team's proposed lunar technology, contributing to technical research, systems engineering, proposal development, and NASA-style peer proposal evaluation.",
-    longDescription: [
-      "The NASA Proposal Writing and Evaluation Experience (NPWEE) Academy is a competitive engineering program sponsored by NASA's Marshall Space Flight Center that immerses students in developing technology proposals addressing real NASA mission needs. As the radiation subteam lead on an interdisciplinary team, I contributed to the development of a concept for advanced radiation shielding intended for future lunar applications. The project culminated in the submission of a complete NASA-style research proposal and technology development plan.",
-      "Rather than focusing solely on design, the program emphasized the complete engineering development process. Our team evaluated existing technologies, conducted literature reviews, compared design alternatives, considered manufacturing constraints, developed testing and validation plans, estimated project costs, assessed technical risks, and created a phased project schedule. My role focused on radiation shielding research, technical writing, and collaborating with teammates specializing in thermal analysis, CAD, simulations, and project management.",
-      "One of the most valuable aspects of the experience was learning how engineering ideas are communicated. We produced a professional proposal modeled after those submitted to NASA, requiring us to justify our concept, align it with NASA technology priorities, define measurable objectives, develop work packages, estimate budgets, and communicate complex technical ideas to reviewers. This significantly strengthened my technical writing and engineering communication skills.",
-      "After submitting our proposal, participants were trained as proposal reviewers and served on a NASA-style peer review panel. Evaluating competing proposals using structured scoring criteria provided valuable insight into how engineering projects are assessed for technical merit, feasibility, innovation, and execution. Experiencing both the proposal development and evaluation processes fundamentally changed how I approach engineering communication and project planning.",
-      "Beyond the technical work, the program strengthened my ability to collaborate within a multidisciplinary engineering team operating in a virtual environment. Working alongside students with backgrounds in aerospace, mechanical engineering, materials science, and simulation reinforced the importance of interdisciplinary collaboration in solving complex engineering challenges.",
-    ],
-    tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
-    image: "",
-    featured: true,
-    outcomes: [
-      "Developed skills in:",
-      "Technical proposal writing",
-      "Systems engineering and technology development",
-      "Engineering research and literature review",
-      "Project planning and risk assessment",
-      "Technical communication",
-      "Cross-disciplinary collaboration",
-      "Proposal evaluation and peer review",
-      "Engineering decision-making",
-      "Scientific and technical documentation",
-    ]
-  },
+
 ]
 
 export type Writing = {
