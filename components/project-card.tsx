@@ -9,15 +9,19 @@ export function ProjectCard({ project }: { project: Project }) {
       href={`/projects/${project.slug}`}
       className="group flex flex-col overflow-hidden rounded-md border border-border bg-card transition-colors hover:border-primary"
     >
-      <div className="overflow-hidden border-b border-border bg-secondary">
-        <Image
-          src={project.image || "/placeholder.svg"}
-          alt={project.title}
-          width={800}
-          height={600}
-          className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-        />
-      </div>
+      {/* Conditional Image Rendering Block */}
+      {project.image && (
+        <div className="overflow-hidden border-b border-border bg-secondary">
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={800}
+            height={600}
+            className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+        </div>
+      )}
+
       <div className="flex flex-1 flex-col p-6">
         <span className="font-sans text-xs uppercase tracking-[0.25em] text-muted-foreground">
           {project.year}
