@@ -91,7 +91,7 @@ export const projects: Project[] = [
       "Beyond the technical work, the program strengthened my ability to collaborate within a multidisciplinary engineering team operating in a virtual environment. Working alongside students with backgrounds in aerospace, mechanical engineering, materials science, and simulation reinforced the importance of interdisciplinary collaboration in solving complex engineering challenges.",
     ],
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
-    image: "",
+    image: "/projects/lspace.png",
     featured: false,
     outcomes: [
       "Developed skills in:",
