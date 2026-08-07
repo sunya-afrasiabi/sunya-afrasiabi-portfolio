@@ -94,16 +94,8 @@ export const projects: Project[] = [
     image: "/projects/lspace.png",
     featured: true,
     outcomes: [
-      "Developed skills in:",
-      "Technical proposal writing",
-      "Systems engineering and technology development",
-      "Engineering research and literature review",
-      "Project planning and risk assessment",
-      "Technical communication",
-      "Cross-disciplinary collaboration",
-      "Proposal evaluation and peer review",
-      "Engineering decision-making",
-      "Scientific and technical documentation",
+      "Developed skills in: technical proposal writing, project planning and risk assessment, and scientific and technical documentation",
+      "Final proposal scored in top 6 out of 40+ national teams"
     ]
   },
   {
