@@ -60,7 +60,7 @@ export const projects: Project[] = [
   {
     slug: "rover-chassis",
     year: "Spring 2026",
-    title: "Rover Chassis Prototype",
+    title: "Rover Chassis",
     description: "Created under University Rover Challenge constraints, as part of Mars Rover Club.",
     longDescription: [
       "As part of a three-person engineering team, we designed and modeled a structural chassis prototype for a Mars rover optimized around University Rover Challenge (URC) competition constraints. Using SolidWorks, we created detailed CAD assemblies and integrated individual components into a cohesive rover architecture. We applied Finite Element Analysis (FEA) to evaluate dynamic load paths and iteratively refined bracket placement, wall thicknesses, and ribbed pocket geometries to reduce mass while maintaining structural integrity under simulated operating conditions.",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     ],
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
     image: "/projects/lspace.png",
-    featured: false,
+    featured: true,
     outcomes: [
       "Developed skills in:",
       "Technical proposal writing",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     ],
     tags: ["Fluid Mechanics", "Rapid Prototyping", "SolidWorks", "3D Printing"],
     image: "/projects/seed-cleaner.jpg",
-    featured: true,
+    featured: false,
     role: "Farm Committee | Engineers without Borders",
     outcomes: [
       "Automated post-harvest processing by separating viable seeds from lightweight chaff through vacuum-powered aspiration.",
