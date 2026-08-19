@@ -121,28 +121,27 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Box 3 */}
-          <div className="flex flex-col rounded-md border border-border bg-card p-6">
+          {/* Box 3: Bubble Tea Awning */}
+          <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
             <div className="flex-1">
-              <h3 className="font-heading text-lg font-semibold text-foreground">
+              <h3 className="font-semibold text-foreground">
                 Awning of Bubble Tea Machine
               </h3>
-              <p className="mt-1 font-sans text-sm text-muted-foreground">
+              <p className="mt-1 font-sans text-xs text-muted-foreground">
                 Orble, Munch Industries Inc.
               </p>
-              <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+              <p className="mt-2 text-sm text-muted-foreground">
                 Currently manufacturing the awning of a bubble tea machine, that will be displayed on 30th Street Station, using a combination of PVC piping, 3D printing, laser cutting, and other manufacturing methods.
               </p>
             </div>
             <Link
               href="/projects/bubble-tea-awning"
-              className="group mt-6 inline-flex items-center gap-2 font-sans text-sm font-medium uppercase tracking-widest text-foreground transition-colors hover:text-primary"
+              className="group mt-6 inline-flex w-fit items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
             >
               Learn more
-              <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
             </Link>
           </div>
-        </div>
       </section>
 
       {/* ================= SELECTED PROJECTS SECTION ================= */}
