@@ -83,7 +83,7 @@ export default function HomePage() {
         <div className="grid gap-6 md:grid-cols-3">
           {/* Box 1 */}
           <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
-            <div>
+            <div className="flex-1">
               <h3 className="font-semibold text-foreground">
                 Bio-Inspired Dragonfly Wing Morphing
               </h3>
@@ -102,36 +102,36 @@ export default function HomePage() {
               className="group mt-6 inline-flex w-fit items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
             >
               Learn more
-              <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
             </Link>
           </div>
 
           {/* Box 2 */}
-          <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
-            <div>
-              <h3 className="font-sans text-base font-semibold text-foreground">
+          <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm transition-colors hover:bg-secondary/50">
+            <div className="flex-1">
+              <h3 className="font-semibold text-foreground">
                 Tactical Fleet Telemetry Pipeline
               </h3>
               <p className="mt-1 font-sans text-xs text-muted-foreground">
                 Personal Project
               </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Building a backend infrastructure that simulates a fleet of autonomous drones (or ground vehicles), ingests their live sensor data, processes it for anomalies (like overheating or off-path navigation), and stores it in a structured database for querying.
+              </p>
             </div>
-            <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              Building a backend infrastructure that simulates a fleet of autonomous drones (or ground vehicles), ingests their live sensor data, processes it for anomalies (like overheating or off-path navigation), and stores it in a structured database for querying.
-            </p>
           </div>
 
-          {/* Box 3: Bubble Tea Awning */}
+          {/* Box 3 */}
           <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
             <div className="flex-1">
               <h3 className="font-semibold text-foreground">
-                Awning of Bubble Tea Machine
+                Structural Hardware for Automated Vending
               </h3>
               <p className="mt-1 font-sans text-xs text-muted-foreground">
                 Orble, Munch Industries Inc.
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
-                Currently manufacturing the awning of a bubble tea machine, that will be displayed on 30th Street Station, using a combination of PVC piping, 3D printing, laser cutting, and other manufacturing methods.
+                Currently designing and manufacturing the exterior framework, awning, and high-visibility signage for deployment at 30th Street Station using a hybrid workflow of 3D printing, laser-cut acrylics, and custom mounting solutions.
               </p>
             </div>
             <Link
