@@ -137,6 +137,27 @@ export const projects: Project[] = [
       "Optimized designs for powder-bed TPU additive manufacturing by evaluating minimum feature sizes, hollow channel dimensions, wall thicknesses, and powder evacuation constraints."
     ]
   },
+  {
+    slug: "bubble-tea-awning",
+    year: "2026",
+    role: "Mechanical Engineer",
+    title: "Orble Bubble Tea Machine Awning",
+    description:
+      "Designed and fabricated the structural awning for an automated boba tea vending machine deployed at 30th Street Station.",
+    longDescription: [
+      "As a Mechanical Engineer for Munch Industries Inc., I am currently designing and manufacturing the structural framework and awning for Orble, an automated boba tea vending machine startup.",
+      "Because the machine is slated for high-visibility public deployment at Philadelphia's 30th Street Station, the awning requires a clean, professional aesthetic while maintaining robust structural integrity.",
+      "To accomplish this, I utilized a combination of manufacturing methods, including rigid PVC piping fabrication, custom 3D printed joints, and laser-cut paneling. All structural components and tolerances were modeled and verified in SolidWorks prior to physical assembly."
+    ],
+    tags: ["SolidWorks", "Manufacturing", "3D Printing", "Laser Cutting"],
+    image: "", 
+    featured: false,
+    outcomes: [
+      "Designed the complete structural framework and awning for a public-facing automated vending machine using SolidWorks.",
+      "Manufactured the final assembly using a hybrid fabrication approach, integrating PVC piping, 3D printed connectors, and laser-cut panels.",
+      "Prepared the structural casing for high-traffic deployment at 30th Street Station by ensuring tight manufacturing tolerances and robust material selection."
+    ],
+  },
 
 ]
 
