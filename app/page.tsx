@@ -123,19 +123,25 @@ export default function HomePage() {
           </div>
 
           {/* Box 3 */}
-          <div className="flex flex-col gap-3 rounded-xl border border-border bg-card p-6 shadow-sm transition-colors hover:bg-secondary/50">
-            <div>
-              <h3 className="font-sans text-base font-semibold text-foreground">
-                Awning of Bubble Tea Machine
-              </h3>
-              <p className="mt-1 font-sans text-xs text-muted-foreground">
-                Orble, Munch Industries Inc.
-              </p>
-            </div>
-            <p className="font-sans text-sm leading-relaxed text-muted-foreground">
-              Manufacturing the awning of a bubble tea machine, that will be displayed on 30th Street Station, using a combination of PVC piping, 3D printing, laser cutting, and other manufacturing methods.
+        <div className="flex flex-col rounded-md border border-border bg-card p-6">
+          <div className="flex-1">
+            <h3 className="font-heading text-lg font-semibold text-foreground">
+              Awning of Bubble Tea Machine
+            </h3>
+            <p className="mt-1 font-sans text-sm text-muted-foreground">
+              Orble, Munch Industries Inc.
+            </p>
+            <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+              Currently manufacturing the awning of a bubble tea machine, that will be displayed on 30th Street Station, using a combination of PVC piping, 3D printing, laser cutting, and other manufacturing methods.
             </p>
           </div>
+          <Link
+            href="/projects/bubble-tea-awning"
+            className="group mt-6 inline-flex items-center gap-2 font-sans text-sm font-medium uppercase tracking-widest text-foreground transition-colors hover:text-primary"
+          >
+            Learn more
+            <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+          </Link>
         </div>
       </section>
 
