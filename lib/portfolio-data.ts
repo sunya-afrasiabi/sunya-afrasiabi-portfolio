@@ -133,7 +133,7 @@ export const projects: Project[] = [
   },
   {
     slug: "seed-cleaner",
-    year: "Fall 2025",
+    year: "Spring 2025",
     title: "Vacuum-powered Seed Cleaner",
     description: "Created for Novick Urban Farm with automating seed-chaff separation to improve post-harvest efficiency, as part of Engineers without Borders.",
     longDescription: [
