@@ -139,7 +139,7 @@ export const projects: Project[] = [
   },
   {
     slug: "bubble-tea-awning",
-    year: "2026",
+    year: "Current",
     role: "Mechanical Engineer",
     title: "Orble Bubble Tea Machine Awning",
     description:
