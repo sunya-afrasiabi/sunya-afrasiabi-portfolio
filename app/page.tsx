@@ -106,20 +106,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Box 2 */}
-          <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm transition-colors hover:bg-secondary/50">
-            <div className="flex-1">
-              <h3 className="font-semibold text-foreground">
-                Tactical Fleet Telemetry Pipeline
-              </h3>
-              <p className="mt-1 font-sans text-xs text-muted-foreground">
-                Personal Project
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Building a backend infrastructure that simulates a fleet of autonomous drones (or ground vehicles), ingests their live sensor data, processes it for anomalies (like overheating or off-path navigation), and stores it in a structured database for querying.
-              </p>
-            </div>
-          </div>
+    
 
           {/* Box 3 */}
           <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
