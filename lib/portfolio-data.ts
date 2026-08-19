@@ -32,29 +32,22 @@ export const projects: Project[] = [
   {
     slug: "butane-rocket-targeting",
     year: "Spring 2026",
-    title: "Multi-Phase Butane Rocket & Numerical Simulation",
-    description: "Designed, simulated, and experimentally validated a variable-mass water rocket using iterative thermodynamic modeling for precise trajectory prediction and target acquisition.",
+    title: "Multi-Phase Butane Rocket Targeting & Numerical Simulation",
+    description: "Iterative thermodynamic modeling and experimental calibration of a variable-mass water rocket for precise spatial target acquisition.",
     longDescription: [
-      "As part of a three-person engineering team, we designed and optimized a butane-powered water rocket capable of navigating constrained flight paths and engaging targets under strict spatial clearance requirements. Our project used aerodynamic design, thermodynamic modeling, numerical simulation, and experimental validation to predict and optimize rocket trajectories.",
-      "My primary contribution was developing a custom Python simulation that modeled the rocket as a variable-mass dynamic system, integrating temperature-dependent butane vaporization, pressure-driven fluid expulsion, aerodynamic drag, and ballistic flight behavior. I implemented a multi-stage Euler integration solver to simulate thrust generation and trajectory evolution in real time, then calibrated drag coefficients, thermal efficiency factors, and propellant-loading models by comparing simulated predictions with experimental launch data.",
-      "I also reconstructed flight trajectories from launch videos using perspective-corrected kinematic tracking to improve the accuracy of our model. By analyzing apex height, velocity decay, and range performance, I identified previously unmodeled freeze-out behavior caused by insufficient thermal mass during butane vaporization. I incorporated these findings into empirical correction factors and optimization routines that significantly improved trajectory prediction and targeting consistency.",
-      "Together, we developed a multi-parameter optimization algorithm that evaluated launch angle, water mass, butane loading, and thermal buffering effects to identify launch configurations capable of clearing spatial obstacles while minimizing target error.",
+      "To clear strict spatial clearance obstacles and hit targets up to 30m away, our team engineered a high-velocity butane-powered 2L projectile system optimized via custom external aerodynamics, including an elliptical ABS nose cone and passively stabilized canted ASA fins.",
+      "We transitioned from an introductory Random Forest machine learning pipeline to a deterministic physics integration engine. Our final codebase runs a multi-stage Euler time-integration solver linking temperature-dependent vaporization profiles (Antoine Equation) with gas-phase isentropic nozzle flow expansions to predict optimal launch trajectories.",
+      "Through 2D kinematics tracking reconstruction, we isolated thrust decay anomalies from atmospheric drag curves. This analysis proved that lower fluid configurations fell into endothermic freeze-out thresholds, prompting a grid-search penalty function to maximize targeted flight consistency."
     ],
     tags: ["Fluid Mechanics", "Thermodynamics", "Python (SciPy)", "Numerical Integration"],
     image: "/projects/butane-rocket.jpg",
     featured: true,
-    role: "MechE Sophomore Lab Final Project",
-    href: "", 
     outcomes: [
-      "Developed a custom variable-mass rocket flight simulator in Python using multi-stage Euler integration with a 5 ms timestep to model coupled thermodynamic and ballistic flight behavior.",
-      "Implemented a multidimensional optimization framework evaluating launch angle, propellant loading, and thermal buffering parameters against a weighted target-acquisition cost function.",
-      "Reconstructed full flight trajectories from perspective-corrected video data to calibrate drag coefficients, quantify thrust decay, and identify thermodynamic freeze-out effects.",
-      "Integrated Antoine-equation vapor pressure modeling and empirical efficiency corrections to improve prediction accuracy under real-world operating conditions.",
-      "Designed and fabricated a low-drag rocket airframe featuring an elliptical ABS nose cone and passively stabilized canted ASA fins for improved flight stability and range.",
-    ],
-    links: [
-      { label: "Google Colab Codebase", url: "https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing" },
-      { label: "Launch Demonstration Footage", url: "/projects/rocket.launch.MOV" },
+      "Designed a custom variable-mass multi-stage Euler integration solver in Python running at a 0.005-second timestep. [Code Architecture: https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing]",
+      "Developed a multi-variable grid search routine optimizing launch angles, propellant loading, and thermal buffering functions against a heavily weighted cost matrix.",
+      "Reconstructed full ballistic flight arcs via digital perspective video tracking to isolate transient fluid loss variables and adjust active aerodynamic drag coefficients.",
+      "Launch Demonstration Video Link: /projects/rocket.launch.MOV",
+      "Complete Experimental Trials & Calibration Logs Data Matrix: https://docs.google.com/spreadsheets/d/1GZ_oA8uZZpWpOq7V8PbKMCz3gbvjFobtUqlkufEcfhU/edit?usp=sharing"
     ]
   },
   {
@@ -64,7 +57,7 @@ export const projects: Project[] = [
     description: "Created under University Rover Challenge constraints, as part of Mars Rover Club.",
     longDescription: [
       "As part of a three-person engineering team, we designed and modeled a structural chassis prototype for a Mars rover optimized around University Rover Challenge (URC) competition constraints. Using SolidWorks, we created detailed CAD assemblies and integrated individual components into a cohesive rover architecture. We applied Finite Element Analysis (FEA) to evaluate dynamic load paths and iteratively refined bracket placement, wall thicknesses, and ribbed pocket geometries to reduce mass while maintaining structural integrity under simulated operating conditions.",
-      "To manage high-impact loading scenarios, we developed a material strategy tailored to component-specific requirements. High-strength Grade 5 titanium rods and 3/8-inch threaded rods were incorporated to withstand peak tensile and bending stresses, while lightweight 3D-printed lattice structures were used for non-structural enclosures and rapid prototyping.",
+      "To manage high-impact loading scenarios, we developed a material strategy tailored to component-specific requirements. High-strength Grade 5 titanium rods and 3/8-inch threaded rods were incorporated to withstand peak tensile and bending stresses, while lightweight 3D-printed lattice structures were used for non-structural enclosures and rapid prototyping."
     ],
     tags: ["Kinematics", "Stress/ Strain Optimization", "SolidWorks", "3D Printing"],
     image: "/projects/chassis.jpg",
@@ -74,7 +67,7 @@ export const projects: Project[] = [
       "Designed precise SolidWorks suspension assemblies to eliminate kinematic interference throughout the full range of angular motion.",
       "Conducted stress, strain, and material analyses on suspension brackets to reduce weight while maintaining structural integrity under high-impact loading.",
       "Engineered multi-axis suspension linkages using 3/8-inch left-hand threaded ball joint sockets and bearings to enable smooth articulation across uneven terrain.",
-      "Improved chassis integration and serviceability through lightweight PVC support structures secured with flange-mounted shaft collars to resist torsional deformation.",
+      "Improved chassis integration and serviceability through lightweight PVC support structures secured with flange-mounted shaft collars to resist torsional deformation."
     ],
   },
   {
@@ -88,14 +81,14 @@ export const projects: Project[] = [
       "Rather than focusing solely on design, the program emphasized the complete engineering development process. Our team evaluated existing technologies, conducted literature reviews, compared design alternatives, considered manufacturing constraints, developed testing and validation plans, estimated project costs, assessed technical risks, and created a phased project schedule. My role focused on radiation shielding research, technical writing, and collaborating with teammates specializing in thermal analysis, CAD, simulations, and project management.",
       "One of the most valuable aspects of the experience was learning how engineering ideas are communicated. We produced a professional proposal modeled after those submitted to NASA, requiring us to justify our concept, align it with NASA technology priorities, define measurable objectives, develop work packages, estimate budgets, and communicate complex technical ideas to reviewers. This significantly strengthened my technical writing and engineering communication skills.",
       "After submitting our proposal, participants were trained as proposal reviewers and served on a NASA-style peer review panel. Evaluating competing proposals using structured scoring criteria provided valuable insight into how engineering projects are assessed for technical merit, feasibility, innovation, and execution. Experiencing both the proposal development and evaluation processes fundamentally changed how I approach engineering communication and project planning.",
-      "Beyond the technical work, the program strengthened my ability to collaborate within a multidisciplinary engineering team operating in a virtual environment. Working alongside students with backgrounds in aerospace, mechanical engineering, materials science, and simulation reinforced the importance of interdisciplinary collaboration in solving complex engineering challenges.",
+      "Beyond the technical work, the program strengthened my ability to collaborate within a multidisciplinary engineering team operating in a virtual environment. Working alongside students with backgrounds in aerospace, mechanical engineering, materials science, and simulation reinforced the importance of interdisciplinary collaboration in solving complex engineering challenges."
     ],
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
     image: "/projects/lspace.png",
     featured: true,
     outcomes: [
-      "Developed skills in: technical proposal writing, project planning and risk assessment, and scientific and technical documentation",
-      "Final proposal scored in top 6 out of 40+ national teams"
+      "Developed skills in: technical proposal writing, project planning and risk assessment, and scientific and technical documentation.",
+      "Final proposal scored in top 6 out of 40+ national teams."
     ]
   },
   {
@@ -105,7 +98,7 @@ export const projects: Project[] = [
     description: "Created for Novick Urban Farm with automating seed-chaff separation to improve post-harvest efficiency, as part of Engineers without Borders.",
     longDescription: [
       "Manual seed-chaff separation is a labor-intensive bottleneck in urban agriculture. To automate this process for Novick Urban Farm, our team designed and fabricated a custom vertical aspirator that uses fluid dynamics and material density differences to separate seeds from lightweight debris. The primary design challenge was creating a controlled, uniform negative-pressure environment that lifted chaff while allowing heavier seeds to settle.",
-      "We engineered a rigid vertical separation column featuring a zig-zag internal flow path and custom swirl chamber beneath the vacuum outlet. The geometry increased particle residence time and promoted repeated exposure to cross-flowing air, improving separation efficiency during each pass. Laser-cut acrylic viewing panels enabled visual tuning of airflow behavior, while 3D-printed inlet nozzles allowed rapid iteration of the fluid delivery system.",
+      "We engineered a rigid vertical separation column featuring a zig-zag internal flow path and custom swirl chamber beneath the vacuum outlet. The geometry increased particle residence time and promoted repeated exposure to cross-flowing air, improving separation efficiency during each pass. Laser-cut acrylic viewing panels enabled visual tuning of airflow behavior, while 3D-printed inlet nozzles allowed rapid iteration of the fluid delivery system."
     ],
     tags: ["Fluid Mechanics", "Rapid Prototyping", "SolidWorks", "3D Printing"],
     image: "/projects/seed-cleaner.jpg",
@@ -114,7 +107,7 @@ export const projects: Project[] = [
     outcomes: [
       "Automated post-harvest processing by separating viable seeds from lightweight chaff through vacuum-powered aspiration.",
       "Fabricated the system using rapid prototyping methods, combining wood framing, custom fasteners, and acrylic panels.",
-      "Collaborated on a five-person team to deploy the machinery and construct a winter greenhouse enabling year-round crop cultivation.",
+      "Collaborated on a five-person team to deploy the machinery and construct a winter greenhouse enabling year-round crop cultivation."
     ],
   },
   {
@@ -142,23 +135,21 @@ export const projects: Project[] = [
     year: "Current",
     role: "Mechanical Engineer",
     title: "Orble Bubble Tea Machine Awning",
-    description:
-      "Designed and fabricated the structural awning for an automated boba tea vending machine deployed at 30th Street Station.",
+    description: "Designed and fabricated the structural awning for an automated boba tea vending machine deployed at 30th Street Station.",
     longDescription: [
-      "As a Mechanical Engineer for Munch Industries Inc., I am currently designing and manufacturing the structural framework and awning for Orble, an automated boba tea vending machine startup.",
-      "Because the machine is slated for high-visibility public deployment at Philadelphia's 30th Street Station, the awning requires a clean, professional aesthetic while maintaining robust structural integrity.",
-      "To accomplish this, I utilized a combination of manufacturing methods, including rigid PVC piping fabrication, custom 3D printed joints, and laser-cut paneling. All structural components and tolerances were modeled and verified in SolidWorks prior to physical assembly."
+      "As a Mechanical Engineer for Munch Industries Inc., I am currently designing and manufacturing the structural framework, awning, and signage for Orble, an automated boba tea vending machine startup. Because the machines are slated for high-visibility public deployments, such as Philadelphia's 30th Street Station, the structural components require a clean, professional aesthetic while maintaining robust structural integrity. To ensure readability from over 10 feet away, I optimized the typography and layout for high visual contrast, sizing the text between 1.75 and 4.5 inches tall depending on the specific machine constraints. The primary engineering challenge involves adapting the mounting hardware to varying environments, ranging from securing heavy components to wooden posts using L-brackets and wood screws, to designing custom 3D-printed slot channels secured with 3M VHB tape for direct chassis integration.",
+      "I modeled the custom 3D-printed bases, signage, and structural clearances in CAD before moving to physical assembly. To navigate the maximum dimensional limits of our available laser cutters and 3D printers, I utilized a carefully planned hybrid manufacturing approach. This workflow included laser-cutting 1/4-inch black acrylic panels, applying permanent adhesive vinyl for branding, and integrating rubber washers to safely distribute torque and prevent the acrylic from cracking under concentrated stress from the mounting fasteners."
     ],
-    tags: ["SolidWorks", "Manufacturing", "3D Printing", "Laser Cutting"],
+    tags: ["SolidWorks", "DFM (Design for Manufacture)", "3D Printing", "Laser Cutting"],
     image: "", 
     featured: false,
     outcomes: [
-      "Designed the complete structural framework and awning for a public-facing automated vending machine using SolidWorks.",
-      "Manufactured the final assembly using a hybrid fabrication approach, integrating PVC piping, 3D printed connectors, and laser-cut panels.",
-      "Prepared the structural casing for high-traffic deployment at 30th Street Station by ensuring tight manufacturing tolerances and robust material selection."
+      "Designed and fabricated high-contrast acrylic signage and awning components for public-facing automated vending machines deployed at 30th Street Station.",
+      "Engineered location-specific mounting solutions, including heavy-duty L-bracket structural supports and custom 3D-printed slot-channel clamps secured with 3M VHB tape, to prevent heavy acrylic panels from shearing off the machine.",
+      "Calculated strict spatial clearances—such as ensuring a 66-inch bottom clearance at the 30th Street Station deployment—and adapted CAD models to fit the specific build volume constraints of available university fabrication labs.",
+      "Implemented a robust assembly workflow combining 1/4-inch laser-cut black acrylic, permanent vinyl lettering, custom 3D-printed brackets, and rubber load-distributing washers to mitigate fracture risks."
     ],
   },
-
 ]
 
 export type Writing = {
@@ -213,7 +204,7 @@ export const roles: Role[] = [
     period: "July 2026 - Present",
     title: "Mechanical Engineer",
     org: "Munch Industries Inc",
-    description: "Design and fabricate the awning and structural framework for Orble, an automated boba tea vending machine startup, using SolidWorks, laser cutting, 3D printing, and PVC fabrication",
+    description: "Design and fabricate the awning and structural framework for Orble, an automated boba tea vending machine startup, using SolidWorks, laser cutting, 3D printing, and PVC fabrication.",
   },
   {
     period: "May 2026 - Present",
@@ -254,20 +245,20 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    heading: "Design & Machining",
-    items: ["SolidWorks", "Rhino & Grasshopper", "GD&T", "3D Printing & Rapid Prototyping"],
+    heading: "Design & CAD",
+    items: ["SolidWorks", "Fusion 360", "GD&T", "Design for Manufacture"],
   },
   {
-    heading: "Code",
-    items: ["MATLAB", "Python", "Arduino", "NumPy & SciPy"],
+    heading: "Analysis & Code",
+    items: ["MATLAB", "Python", "FEA / Ansys", "NumPy & SciPy"],
   },
   {
-    heading: "Analysis",
-    items: ["Finite Element Analysis", "Stress & Strain Analysis", "Cost & Risk Analysis", "Data Visualization"],
+    heading: "Fabrication",
+    items: ["CNC Milling", "Lathe Work", "3D Printing", "Rapid Prototyping"],
   },
   {
-    heading: "Other",
-    items: ["Logic & Argumentation", "Project Management", "Proposal & Grant Writing", "Microsoft Office"],
+    heading: "Thinking & Writing",
+    items: ["Ethics of Technology", "Logic", "Long-form Essays", "Argument Design"],
   },
 ]
 
@@ -276,5 +267,6 @@ export const interests: string[] = [
   "Compliant Mechanisms",
   "Ethics of Technology",
   "Machining",
+  "Hannah Arendt",
   "Sketching Linkages",
 ]
