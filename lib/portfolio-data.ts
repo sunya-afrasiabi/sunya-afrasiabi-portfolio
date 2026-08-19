@@ -29,6 +29,46 @@ export type Project = {
 }
 
 export const projects: Project[] = [
+    {
+    slug: "dragonfly-wing",
+    year: "Current",
+    title: "Bio-Inspired Dragonfly Wing Morphing",
+    description: "Designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino for powder-based 3D printing.",
+    longDescription: [
+      "I explored how insects deploy and control ultralight wings to develop bio-inspired structures for soft robotics and micro aerial vehicles. Beginning with an interdisciplinary literature review spanning insect physiology, aerodynamics, soft robotics, and additive manufacturing, I identified the biological mechanisms that make insect wings both lightweight and structurally efficient (including hydraulic hemolymph expansion, graded stiffness, corrugated geometries, and vein-membrane architectures) and translated these concepts into engineering design principles for deployable morphing wings.",
+      "I then transformed those principles into a fully parametric CAD workflow using Rhino and Grasshopper. By deriving analytical relationships for vein taper, corrugation amplitude, cell-density gradients, and inertial mass distribution, I developed a configurable wing-generation framework that enabled rapid design iteration while preserving the structural characteristics observed in biological wings.",
+      "I am currently working on ensuring the design can be physically manufactured. I am incorporating the constraints of powder-bed TPU additive manufacturing directly into the modeling process by iteratively optimizing hollow vein geometries, channel diameters, wall thicknesses, and overall wing dimensions to balance printability, structural integrity, and powder evacuation."
+    ],
+    tags: ["Grasshopper", "Rhino", "3D Printing", "Biomimicry"],
+    image: "/projects/dragonfly.jpg",
+    featured: false,
+    outcomes: [
+      "Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
+      "Derived parametric equations governing vein taper, corrugation amplitude, cell spacing, and mass distribution for bio-inspired wing geometries.",
+      "Developed fully parametric Rhino/Grasshopper models capable of generating biologically inspired wing architectures with configurable structural features.",
+      "Optimized designs for powder-bed TPU additive manufacturing by evaluating minimum feature sizes, hollow channel dimensions, wall thicknesses, and powder evacuation constraints."
+    ]
+  },
+  {
+    slug: "bubble-tea-awning",
+    year: "Current",
+    role: "Mechanical Engineer",
+    title: "Structural Hardware for Automated Vending",
+    description: "Currently designing and manufacturing the exterior framework, awning, and high-visibility signage for deployment at 30th Street Station using a hybrid workflow of 3D printing, laser-cut acrylics, and custom mounting solutions.",
+    longDescription: [
+      "As a Mechanical Engineer for Munch Industries Inc., I am currently designing and manufacturing the structural framework, awning, and signage for Orble, an automated boba tea vending machine startup. Because the machines are slated for high-visibility public deployments, such as Philadelphia's 30th Street Station, the structural components require a clean, professional aesthetic while maintaining robust structural integrity. To ensure readability from over 10 feet away, I optimized the typography and layout for high visual contrast, sizing the text between 1.75 and 4.5 inches tall depending on the specific machine constraints. The primary engineering challenge involves adapting the mounting hardware to varying environments, ranging from securing heavy components to wooden posts using L-brackets and wood screws, to designing custom 3D-printed slot channels secured with 3M VHB tape for direct chassis integration.",
+      "I modeled the custom 3D-printed bases, signage, and structural clearances in CAD before moving to physical assembly. To navigate the maximum dimensional limits of our available laser cutters and 3D printers, I utilized a carefully planned hybrid manufacturing approach. This workflow included laser-cutting 1/4-inch black acrylic panels, applying permanent adhesive vinyl for branding, and integrating rubber washers to safely distribute torque and prevent the acrylic from cracking under concentrated stress from the mounting fasteners."
+    ],
+    tags: ["SolidWorks", "DFM (Design for Manufacture)", "3D Printing", "Laser Cutting"],
+    image: "", 
+    featured: false,
+    outcomes: [
+      "Designed and fabricated high-contrast acrylic signage and awning components for public-facing automated vending machines deployed at 30th Street Station.",
+      "Engineered location-specific mounting solutions, including heavy-duty L-bracket structural supports and custom 3D-printed slot-channel clamps secured with 3M VHB tape, to prevent heavy acrylic panels from shearing off the machine.",
+      "Calculated strict spatial clearances—such as ensuring a 66-inch bottom clearance at the 30th Street Station deployment—and adapted CAD models to fit the specific build volume constraints of available university fabrication labs.",
+      "Implemented a robust assembly workflow combining 1/4-inch laser-cut black acrylic, permanent vinyl lettering, custom 3D-printed brackets, and rubber load-distributing washers to mitigate fracture risks."
+    ],
+  },
   {
     slug: "butane-rocket-targeting",
     year: "Spring 2026",
@@ -110,46 +150,7 @@ export const projects: Project[] = [
       "Collaborated on a five-person team to deploy the machinery and construct a winter greenhouse enabling year-round crop cultivation."
     ],
   },
-  {
-    slug: "dragonfly-wing",
-    year: "Current",
-    title: "Bio-Inspired Dragonfly Wing Morphing",
-    description: "Designing and modeling a bio-inspired wing morphing structure using Grasshopper and Rhino for powder-based 3D printing.",
-    longDescription: [
-      "I explored how insects deploy and control ultralight wings to develop bio-inspired structures for soft robotics and micro aerial vehicles. Beginning with an interdisciplinary literature review spanning insect physiology, aerodynamics, soft robotics, and additive manufacturing, I identified the biological mechanisms that make insect wings both lightweight and structurally efficient (including hydraulic hemolymph expansion, graded stiffness, corrugated geometries, and vein-membrane architectures) and translated these concepts into engineering design principles for deployable morphing wings.",
-      "I then transformed those principles into a fully parametric CAD workflow using Rhino and Grasshopper. By deriving analytical relationships for vein taper, corrugation amplitude, cell-density gradients, and inertial mass distribution, I developed a configurable wing-generation framework that enabled rapid design iteration while preserving the structural characteristics observed in biological wings.",
-      "I am currently working on ensuring the design can be physically manufactured. I am incorporating the constraints of powder-bed TPU additive manufacturing directly into the modeling process by iteratively optimizing hollow vein geometries, channel diameters, wall thicknesses, and overall wing dimensions to balance printability, structural integrity, and powder evacuation."
-    ],
-    tags: ["Grasshopper", "Rhino", "3D Printing", "Biomimicry"],
-    image: "/projects/dragonfly.jpg",
-    featured: false,
-    outcomes: [
-      "Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
-      "Derived parametric equations governing vein taper, corrugation amplitude, cell spacing, and mass distribution for bio-inspired wing geometries.",
-      "Developed fully parametric Rhino/Grasshopper models capable of generating biologically inspired wing architectures with configurable structural features.",
-      "Optimized designs for powder-bed TPU additive manufacturing by evaluating minimum feature sizes, hollow channel dimensions, wall thicknesses, and powder evacuation constraints."
-    ]
-  },
-  {
-    slug: "bubble-tea-awning",
-    year: "Current",
-    role: "Mechanical Engineer",
-    title: "Structural Hardware for Automated Vending",
-    description: "Currently designing and manufacturing the exterior framework, awning, and high-visibility signage for deployment at 30th Street Station using a hybrid workflow of 3D printing, laser-cut acrylics, and custom mounting solutions.",
-    longDescription: [
-      "As a Mechanical Engineer for Munch Industries Inc., I am currently designing and manufacturing the structural framework, awning, and signage for Orble, an automated boba tea vending machine startup. Because the machines are slated for high-visibility public deployments, such as Philadelphia's 30th Street Station, the structural components require a clean, professional aesthetic while maintaining robust structural integrity. To ensure readability from over 10 feet away, I optimized the typography and layout for high visual contrast, sizing the text between 1.75 and 4.5 inches tall depending on the specific machine constraints. The primary engineering challenge involves adapting the mounting hardware to varying environments, ranging from securing heavy components to wooden posts using L-brackets and wood screws, to designing custom 3D-printed slot channels secured with 3M VHB tape for direct chassis integration.",
-      "I modeled the custom 3D-printed bases, signage, and structural clearances in CAD before moving to physical assembly. To navigate the maximum dimensional limits of our available laser cutters and 3D printers, I utilized a carefully planned hybrid manufacturing approach. This workflow included laser-cutting 1/4-inch black acrylic panels, applying permanent adhesive vinyl for branding, and integrating rubber washers to safely distribute torque and prevent the acrylic from cracking under concentrated stress from the mounting fasteners."
-    ],
-    tags: ["SolidWorks", "DFM (Design for Manufacture)", "3D Printing", "Laser Cutting"],
-    image: "", 
-    featured: false,
-    outcomes: [
-      "Designed and fabricated high-contrast acrylic signage and awning components for public-facing automated vending machines deployed at 30th Street Station.",
-      "Engineered location-specific mounting solutions, including heavy-duty L-bracket structural supports and custom 3D-printed slot-channel clamps secured with 3M VHB tape, to prevent heavy acrylic panels from shearing off the machine.",
-      "Calculated strict spatial clearances—such as ensuring a 66-inch bottom clearance at the 30th Street Station deployment—and adapted CAD models to fit the specific build volume constraints of available university fabrication labs.",
-      "Implemented a robust assembly workflow combining 1/4-inch laser-cut black acrylic, permanent vinyl lettering, custom 3D-printed brackets, and rubber load-distributing washers to mitigate fracture risks."
-    ],
-  },
+
 ]
 
 export type Writing = {
