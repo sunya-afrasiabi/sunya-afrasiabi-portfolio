@@ -128,7 +128,7 @@ export const projects: Project[] = [
       "I am currently working on ensuring the design can be physically manufactured. I am incorporating the constraints of powder-bed TPU additive manufacturing directly into the modeling process by iteratively optimizing hollow vein geometries, channel diameters, wall thicknesses, and overall wing dimensions to balance printability, structural integrity, and powder evacuation."
     ],
     tags: ["Grasshopper", "Rhino", "3D Printing", "Biomimicry"],
-    image: "",
+    image: "/projects/dragonfly.jpg",
     featured: false,
     outcomes: [
       "Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
