@@ -72,9 +72,9 @@ export const projects: Project[] = [
   },
   {
     slug: "npwee",
-    year: "Fall 2026",
+    year: "Fall 2025",
     role: "Radiation Subteam Lead | NASA L'Space Program",
-    title: "NASA L'SPACE Proposal Writing & Evaluation Experience",
+    title: "Lunar Radiation Shielding — HDPE Composite Design",
     description: "Led the radiation research effort as radiation subteam lead for our team's proposed lunar technology, contributing to technical research, systems engineering, proposal development, and NASA-style peer proposal evaluation.",
     longDescription: [
       "The NASA Proposal Writing and Evaluation Experience (NPWEE) Academy is a competitive engineering program sponsored by NASA's Marshall Space Flight Center that immerses students in developing technology proposals addressing real NASA mission needs. As the radiation subteam lead on an interdisciplinary team, I contributed to the development of a concept for advanced radiation shielding intended for future lunar applications. The project culminated in the submission of a complete NASA-style research proposal and technology development plan.",
