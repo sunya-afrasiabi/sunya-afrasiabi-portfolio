@@ -142,6 +142,7 @@ export default function HomePage() {
               <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
             </Link>
           </div>
+        </div>
       </section>
 
       {/* ================= SELECTED PROJECTS SECTION ================= */}
