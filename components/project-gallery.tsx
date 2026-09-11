@@ -25,9 +25,11 @@ export function ProjectGallery({ items, title, isPortrait }: ProjectGalleryProps
 
   const currentItem = items[currentIndex]
 
-  // Smart URL parser for YouTube
+  // Smart URL parser for YouTube - FIXED to detect already-embedded URLs
   let youtubeSrc = null
-  if (currentItem.includes("youtu.be/")) {
+  if (currentItem.includes("youtube.com/embed/")) {
+    youtubeSrc = currentItem // URL is already formatted perfectly!
+  } else if (currentItem.includes("youtu.be/")) {
     youtubeSrc = currentItem.replace("youtu.be/", "www.youtube.com/embed/")
   } else if (currentItem.includes("watch?v=")) {
     youtubeSrc = currentItem.replace("watch?v=", "embed/")
