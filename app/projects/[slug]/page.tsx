@@ -37,6 +37,12 @@ export default async function ProjectDetailPage({
   // Detect if the project features a vertical portrait layout requirement
   const isPortraitProject = project.slug === "butane-rocket-targeting"
 
+  // Ensure YouTube links format to an embed URL if a standard watch link is provided
+  const videoSrc =
+    "videoUrl" in project && typeof project.videoUrl === "string" && project.videoUrl
+      ? project.videoUrl.replace("watch?v=", "embed/")
+      : null
+
   return (
     <article className="mx-auto max-w-4xl px-6 pb-24 pt-12 lg:px-8">
       <Link
@@ -67,8 +73,18 @@ export default async function ProjectDetailPage({
         </ul>
       </header>
 
-      {/* DYNAMIC IMAGE WRAPPER: Wrapped in conditional rendering */}
-      {project.image && (
+      {/* MEDIA CONTAINER: Video Embed or Dynamic Image */}
+      {videoSrc ? (
+        <div className="mt-10 overflow-hidden rounded-md border border-border bg-black aspect-video w-full shadow-sm">
+          <iframe
+            src={videoSrc}
+            title={`${project.title} Demo Video`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="h-full w-full border-0"
+          />
+        </div>
+      ) : project.image ? (
         <div 
           className={`mt-10 overflow-hidden rounded-md border border-border bg-secondary/30 flex items-center justify-center p-4 ${
             isPortraitProject 
@@ -85,7 +101,7 @@ export default async function ProjectDetailPage({
             priority
           />
         </div>
-      )}
+      ) : null}
 
       <div className="mt-10 grid gap-10 md:grid-cols-[1.6fr_1fr]">
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
