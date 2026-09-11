@@ -196,7 +196,7 @@ export type Writing = {
   title: string
   date: string
   excerpt: string
-  href: string
+  pdfUrl: string // Changed from href
   tag: string
   featured: boolean
 }
@@ -207,16 +207,16 @@ export const writing: Writing[] = [
     title: "Linear Algebra Foundations of Neural Networks",
     date: "August 2025",
     excerpt: "An expository research paper linking advanced linear algebra concepts to neural network architectures, training algorithms, and real-world robotics applications. Written for MATH 3120, a theory-based linear algebra course.",
-    href: "https://drive.google.com/file/d/1qKJMd1UthNnXQKS5OtD8bKFdRR9bpLSl/view?usp=sharing",
+    pdfUrl: "https://drive.google.com/file/d/1qKJMd1UthNnXQKS5OtD8bKFdRR9bpLSl/preview", // Changed to /preview
     tag: "Research",
     featured: true,
   },
   {
-    slug: "wildfire-prevention",
-    title: "Aviation Solutions for Wildfire Prevention",
+    slug: "wildlife-prevention",
+    title: "Aviation Solutions for Wildlife Prevention",
     date: "May 2025",
     excerpt: "Investor-oriented whitepaper on UAVs, AI wildfire prediction, and aerospace innovations, framing $6.4B+ market opportunities and potential $5B annual cost savings. Co-authored as part of Wharton Undergraduate Aerospace Club.",
-    href: "https://drive.google.com/file/d/1mxdoEXoXRByKiuIf6_fvRVWCfc1j1aYx/view?usp=sharing",
+    pdfUrl: "https://drive.google.com/file/d/1mxdoEXoXRByKiuIf6_fvRVWCfc1j1aYx/preview", // Changed to /preview
     tag: "Whitepaper",
     featured: true,
   },
@@ -225,7 +225,7 @@ export const writing: Writing[] = [
     title: "Monetizing Loneliness: A Kantian and Utilitarian Critique of AI Companions",
     date: "July 2026",
     excerpt: "A philosophy paper written to examine the ethics of AI companion platforms, arguing that current designs profit by intentionally cultivating emotional dependency. Written for PHIL 1330, an ethics course.",
-    href: "https://drive.google.com/file/d/1WLfoTyidHOX-sz_UpWj1sylbDtit8kmY/view?usp=sharing",
+    pdfUrl: "https://drive.google.com/file/d/1WLfoTyidHOX-sz_UpWj1sylbDtit8kmY/preview", // Changed to /preview
     tag: "Philosophy",
     featured: true,
   },
