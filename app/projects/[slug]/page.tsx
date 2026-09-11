@@ -84,7 +84,7 @@ export default async function ProjectDetailPage({
             className="h-full w-full border-0"
           />
         </div>
-      ) : project.image ? (
+      ) : project.image && !("hideHeroImage" in project && project.hideHeroImage) ? (
         <div 
           className={`mt-10 overflow-hidden rounded-md border border-border bg-secondary/30 flex items-center justify-center p-4 ${
             isPortraitProject 
