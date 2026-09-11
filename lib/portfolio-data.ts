@@ -154,7 +154,7 @@ export const projects: Project[] = [
     ],
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
     image: "/projects/lspace.png",
-    featured: true,
+    featured: false,
     outcomes: [
       "Developed skills in: technical proposal writing, project planning and risk assessment, and scientific and technical documentation.",
       "Final proposal scored in top 6 out of 40+ national teams."
