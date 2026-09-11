@@ -113,6 +113,7 @@ export const projects: Project[] = [
     tags: ["Fluid Mechanics", "Thermodynamics", "Python (SciPy)", "Numerical Integration"],
     image: "/projects/butane-rocket.jpg",
     featured: true,
+    videoUrl: "/projects/rocket.launch.MOV",
     outcomes: [
       "Designed a custom variable-mass multi-stage Euler integration solver in Python running at a 0.005-second timestep. [Code Architecture: https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing]",
       "Developed a multi-variable grid search routine optimizing launch angles, propellant loading, and thermal buffering functions against a heavily weighted cost matrix.",
