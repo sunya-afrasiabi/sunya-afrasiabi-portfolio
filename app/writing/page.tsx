@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { PageHeader } from "@/components/page-header"
 import { writing } from "@/lib/portfolio-data"
@@ -22,8 +23,8 @@ export default function WritingPage() {
         <ul className="flex flex-col border-t border-border">
           {writing.map((piece) => (
             <li key={piece.slug} className="border-b border-border">
-              <a
-                href={piece.href}
+              <Link
+                href={`/writing/${piece.slug}`}
                 className="group flex flex-col gap-3 py-8 transition-colors"
               >
                 <span className="font-sans text-xs uppercase tracking-[0.25em] text-muted-foreground">
@@ -44,7 +45,7 @@ export default function WritingPage() {
                 <span className="font-sans text-sm uppercase tracking-widest text-primary">
                   Read full piece
                 </span>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
