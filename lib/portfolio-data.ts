@@ -269,19 +269,20 @@ export const roles: Role[] = [
     category: "Leadership"
   },
   {
-    period: "Jan 2021 - Aug 2024",
-    title: "Founder and Project Manager",
-    org: "#MyStory Program",
-    description: "Founded an initiative that aims to increase cultural awareness through a combination of oral history, narrative therapy, and portrait exhibition. Secured $24k+ through donations, fundraisers, and grant funding, including funding from Riley's Way Foundation, Prudential, Ashoka, and Peter&Elizabeth Tower Foundation. Collaborated with 20+ community partners and oversaw 40+ volunteers.",
-    category: "Leadership"
-  },
-  {
     period: "Sept 2024 - Present",
     title: "University Mascot",
     org: "University of Pennsylvania, Athletics",
     description: "Perform at athletics, alumni, and community events; engage large audiences through nonverbal communication, improvisation, and high-energy public engagement in fast-paced, high-visibility environments.",
     category: "Leadership"
   },
+  {
+    period: "Jan 2021 - Aug 2024",
+    title: "Founder and Project Manager",
+    org: "#MyStory Program",
+    description: "Founded an initiative that aims to increase cultural awareness through a combination of oral history, narrative therapy, and portrait exhibition. Secured $24k+ through donations, fundraisers, and grant funding, including funding from Riley's Way Foundation, Prudential, Ashoka, and Peter&Elizabeth Tower Foundation. Collaborated with 20+ community partners and oversaw 40+ volunteers.",
+    category: "Leadership"
+  },
+
 ]
 
 export type SkillGroup = {
