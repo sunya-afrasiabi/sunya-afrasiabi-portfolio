@@ -43,6 +43,9 @@ export default async function ProjectDetailPage({
       ? project.videoUrl.replace("watch?v=", "embed/")
       : null
 
+  // Check if the video is a local file rather than a YouTube embed
+  const isLocalVideo = videoSrc?.toLowerCase().includes(".mov") || videoSrc?.toLowerCase().includes(".mp4")
+
   return (
     <article className="mx-auto max-w-4xl px-6 pb-24 pt-12 lg:px-8">
       <Link
@@ -73,16 +76,28 @@ export default async function ProjectDetailPage({
         </ul>
       </header>
 
-      {/* MEDIA CONTAINER: Video Embed or Dynamic Image */}
+      {/* MEDIA CONTAINER: Local Video, YouTube Embed, or Dynamic Image */}
       {videoSrc ? (
         <div className="mt-10 overflow-hidden rounded-md border border-border bg-black aspect-video w-full shadow-sm">
-          <iframe
-            src={videoSrc}
-            title={`${project.title} Demo Video`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="h-full w-full border-0"
-          />
+          {isLocalVideo ? (
+            <video
+              src={videoSrc}
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-full w-full object-contain"
+            />
+          ) : (
+            <iframe
+              src={videoSrc}
+              title={`${project.title} Demo Video`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="h-full w-full border-0"
+            />
+          )}
         </div>
       ) : project.image && !("hideHeroImage" in project && project.hideHeroImage) ? (
         <div 
