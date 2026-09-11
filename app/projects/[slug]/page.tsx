@@ -34,17 +34,19 @@ export default async function ProjectDetailPage({
 
   const others = projects.filter((p) => p.slug !== project.slug).slice(0, 2)
   
-  // Detect if the project features a vertical portrait layout requirement
   const isPortraitProject = project.slug === "butane-rocket-targeting"
 
-  // Ensure YouTube links format to an embed URL if a standard watch link is provided
-  const videoSrc =
-    "videoUrl" in project && typeof project.videoUrl === "string" && project.videoUrl
-      ? project.videoUrl.replace("watch?v=", "embed/")
-      : null
-
-  // Check if the video is a local file rather than a YouTube embed
-  const isLocalVideo = videoSrc?.toLowerCase().includes(".mov") || videoSrc?.toLowerCase().includes(".mp4")
+  // Safely parse short/long YouTube URLs into embeddable iframes
+  let videoSrc = null
+  if ("videoUrl" in project && typeof project.videoUrl === "string" && project.videoUrl) {
+    if (project.videoUrl.includes("youtu.be/")) {
+      videoSrc = project.videoUrl.replace("youtu.be/", "www.youtube.com/embed/")
+    } else if (project.videoUrl.includes("watch?v=")) {
+      videoSrc = project.videoUrl.replace("watch?v=", "embed/")
+    } else {
+      videoSrc = project.videoUrl
+    }
+  }
 
   return (
     <article className="mx-auto max-w-4xl px-6 pb-24 pt-12 lg:px-8">
@@ -76,28 +78,16 @@ export default async function ProjectDetailPage({
         </ul>
       </header>
 
-      {/* MEDIA CONTAINER: Local Video, YouTube Embed, or Dynamic Image */}
+      {/* MEDIA CONTAINER */}
       {videoSrc ? (
         <div className="mt-10 overflow-hidden rounded-md border border-border bg-black aspect-video w-full shadow-sm">
-          {isLocalVideo ? (
-            <video
-              src={videoSrc}
-              controls
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="h-full w-full object-contain"
-            />
-          ) : (
-            <iframe
-              src={videoSrc}
-              title={`${project.title} Demo Video`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="h-full w-full border-0"
-            />
-          )}
+          <iframe
+            src={videoSrc}
+            title={`${project.title} Demo Video`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="h-full w-full border-0"
+          />
         </div>
       ) : project.image && !("hideHeroImage" in project && project.hideHeroImage) ? (
         <div 
@@ -119,6 +109,7 @@ export default async function ProjectDetailPage({
       ) : null}
 
       <div className="mt-10 grid gap-10 md:grid-cols-[1.6fr_1fr]">
+        {/* MAIN INFO */}
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
           {project.longDescription.map((paragraph, i) => (
             <p key={i} className="text-pretty text-base">
@@ -136,7 +127,7 @@ export default async function ProjectDetailPage({
           )}
         </div>
 
-        {/* COMBINED SIDEBAR */}
+        {/* ADDITIONAL INFO (SIDEBAR) */}
         <div className="space-y-8">
           {project.outcomes && project.outcomes.length > 0 && (
             <aside className="h-fit rounded-md border border-border bg-card p-6">
@@ -153,7 +144,6 @@ export default async function ProjectDetailPage({
             </aside>
           )}
 
-          {/* DYNAMIC COMPONENT LINKS */}
           {"links" in project && Array.isArray(project.links) && project.links.length > 0 && (
             <aside className="h-fit rounded-md border border-border bg-card p-6">
               <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground">
@@ -168,10 +158,10 @@ export default async function ProjectDetailPage({
                       rel="noopener noreferrer"
                       className="group inline-flex items-center justify-between w-full rounded-sm border border-border bg-secondary/50 p-3 text-sm text-foreground transition-all hover:border-primary hover:bg-secondary"
                     >
-                      <span className="font-medium transition-colors group-hover:text-primary">
+                      <span className="font-medium transition-colors group-hover:text-primary line-clamp-1">
                         {link.label}
                       </span>
-                      <ArrowUpRight className="size-4 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary" />
+                      <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary" />
                     </a>
                   </li>
                 ))}
