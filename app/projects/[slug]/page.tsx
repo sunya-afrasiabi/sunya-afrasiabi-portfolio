@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react"
 import { projects } from "@/lib/portfolio-data"
+import { ProjectGallery } from "@/components/project-gallery"
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }))
@@ -36,16 +36,15 @@ export default async function ProjectDetailPage({
   
   const isPortraitProject = project.slug === "butane-rocket-targeting"
 
-  // Safely parse short/long YouTube URLs into embeddable iframes
-  let videoSrc = null
-  if ("videoUrl" in project && typeof project.videoUrl === "string" && project.videoUrl) {
-    if (project.videoUrl.includes("youtu.be/")) {
-      videoSrc = project.videoUrl.replace("youtu.be/", "www.youtube.com/embed/")
-    } else if (project.videoUrl.includes("watch?v=")) {
-      videoSrc = project.videoUrl.replace("watch?v=", "embed/")
-    } else {
-      videoSrc = project.videoUrl
-    }
+  // Aggregate all media into a single array for the gallery
+  const mediaItems: string[] = []
+  
+  if (project.gallery && project.gallery.length > 0) {
+    mediaItems.push(...project.gallery)
+  } else {
+    // Fallback: build a gallery array from existing videoUrl and image properties
+    if (project.videoUrl) mediaItems.push(project.videoUrl)
+    if (project.image && !project.hideHeroImage) mediaItems.push(project.image)
   }
 
   return (
@@ -78,35 +77,14 @@ export default async function ProjectDetailPage({
         </ul>
       </header>
 
-      {/* MEDIA CONTAINER */}
-      {videoSrc ? (
-        <div className="mt-10 overflow-hidden rounded-md border border-border bg-black aspect-video w-full shadow-sm">
-          <iframe
-            src={videoSrc}
-            title={`${project.title} Demo Video`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="h-full w-full border-0"
-          />
-        </div>
-      ) : project.image && !("hideHeroImage" in project && project.hideHeroImage) ? (
-        <div 
-          className={`mt-10 overflow-hidden rounded-md border border-border bg-secondary/30 flex items-center justify-center p-4 ${
-            isPortraitProject 
-              ? "max-w-md mx-auto aspect-[3/4] h-[550px]" 
-              : "w-full max-h-[450px] aspect-[3/2]"
-          }`}
-        >
-          <Image
-            src={project.image}
-            alt={project.title}
-            width={1200}
-            height={800}
-            className="max-w-full max-h-full w-auto h-auto object-contain"
-            priority
-          />
-        </div>
-      ) : null}
+      {/* DYNAMIC MEDIA GALLERY */}
+      {mediaItems.length > 0 && (
+        <ProjectGallery 
+          items={mediaItems} 
+          title={project.title} 
+          isPortrait={isPortraitProject} 
+        />
+      )}
 
       <div className="mt-10 grid gap-10 md:grid-cols-[1.6fr_1fr]">
         {/* MAIN INFO */}
