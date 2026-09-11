@@ -106,7 +106,20 @@ export default function HomePage() {
             </Link>
           </div>
 
-    
+          {/* Box 2 */}
+          <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
+            <div className="flex-1">
+              <h3 className="font-semibold text-foreground">
+                Tactical Fleet Telemetry Pipeline
+              </h3>
+              <p className="mt-1 font-sans text-xs text-muted-foreground">
+                Personal Project
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Building a backend infrastructure that simulates a fleet of autonomous drones, ingests their live sensor data, processes it for anomalies, and stores it in a structured database for querying.
+              </p>
+            </div>
+          </div>
 
           {/* Box 3 */}
           <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
@@ -181,7 +194,7 @@ export default function HomePage() {
         <div className="divide-y border-b border-border divide-border">
           {selectedWriting.map((item) => (
             <article key={item.slug} className="py-6 sm:py-8 first:pt-0">
-              <Link href={item.href} target="_blank" rel="noopener noreferrer" className="group block space-y-2">
+              <Link href={`/writing/${item.slug}`} className="group block space-y-2">
                 <div className="flex flex-col justify-between sm:flex-row sm:items-center">
                   <h3 className="text-xl font-medium tracking-tight text-foreground group-hover:text-primary transition-colors">
                     {item.title}
