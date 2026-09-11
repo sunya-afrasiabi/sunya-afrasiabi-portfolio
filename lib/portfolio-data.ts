@@ -103,23 +103,29 @@ export const projects: Project[] = [
   {
     slug: "butane-rocket-targeting",
     year: "Spring 2026",
-    title: "Multi-Phase Butane Rocket Targeting & Numerical Simulation",
-    description: "Iterative thermodynamic modeling and experimental calibration of a variable-mass water rocket for precise spatial target acquisition.",
+    title: "Multi-Phase Butane Rocket & Numerical Simulation",
+    description: "Designed, simulated, and experimentally validated a variable-mass water rocket using iterative thermodynamic modeling for precise trajectory prediction and target acquisition.",
     longDescription: [
-      "To clear strict spatial clearance obstacles and hit targets up to 30m away, our team engineered a high-velocity butane-powered 2L projectile system optimized via custom external aerodynamics, including an elliptical ABS nose cone and passively stabilized canted ASA fins.",
-      "We transitioned from an introductory Random Forest machine learning pipeline to a deterministic physics integration engine. Our final codebase runs a multi-stage Euler time-integration solver linking temperature-dependent vaporization profiles (Antoine Equation) with gas-phase isentropic nozzle flow expansions to predict optimal launch trajectories.",
-      "Through 2D kinematics tracking reconstruction, we isolated thrust decay anomalies from atmospheric drag curves. This analysis proved that lower fluid configurations fell into endothermic freeze-out thresholds, prompting a grid-search penalty function to maximize targeted flight consistency."
+      "As part of a three-person engineering team, we designed and optimized a butane-powered water rocket capable of navigating constrained flight paths and engaging targets under strict spatial clearance requirements. Our project used aerodynamic design, thermodynamic modeling, numerical simulation, and experimental validation to predict and optimize rocket trajectories.",
+      "My primary contribution was developing a custom Python simulation that modeled the rocket as a variable-mass dynamic system, integrating temperature-dependent butane vaporization, pressure-driven fluid expulsion, aerodynamic drag, and ballistic flight behavior. I implemented a multi-stage Euler integration solver to simulate thrust generation and trajectory evolution in real time, then calibrated drag coefficients, thermal efficiency factors, and propellant-loading models by comparing simulated predictions with experimental launch data.",
+      "I also reconstructed flight trajectories from launch videos using perspective-corrected kinematic tracking to improve the accuracy of our model. By analyzing apex height, velocity decay, and range performance, I identified previously unmodeled freeze-out behavior caused by insufficient thermal mass during butane vaporization. I incorporated these findings into empirical correction factors and optimization routines that significantly improved trajectory prediction and targeting consistency.",
+      "Together, we developed a multi-parameter optimization algorithm that evaluated launch angle, water mass, butane loading, and thermal buffering effects to identify launch configurations capable of clearing spatial obstacles while minimizing target error."
     ],
     tags: ["Fluid Mechanics", "Thermodynamics", "Python (SciPy)", "Numerical Integration"],
     image: "/projects/butane-rocket.jpg",
+    hideHeroImage: true, // Hides the image on the detail page, keeps it on the cover
     featured: true,
-    videoUrl: "/projects/rocket.launch.MOV",
+    role: "MechE Sophomore Lab Final Project",
+    videoUrl: "https://youtu.be/g0mR2ZqzE1I", // Your new YouTube link
     outcomes: [
-      "Designed a custom variable-mass multi-stage Euler integration solver in Python running at a 0.005-second timestep. [Code Architecture: https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing]",
-      "Developed a multi-variable grid search routine optimizing launch angles, propellant loading, and thermal buffering functions against a heavily weighted cost matrix.",
-      "Reconstructed full ballistic flight arcs via digital perspective video tracking to isolate transient fluid loss variables and adjust active aerodynamic drag coefficients.",
-      "Launch Demonstration Video Link: /projects/rocket.launch.MOV",
-      "Complete Experimental Trials & Calibration Logs Data Matrix: https://docs.google.com/spreadsheets/d/1GZ_oA8uZZpWpOq7V8PbKMCz3gbvjFobtUqlkufEcfhU/edit?usp=sharing"
+      "Developed a custom variable-mass rocket flight simulator in Python using multi-stage Euler integration with a 5 ms timestep to model coupled thermodynamic and ballistic flight behavior.",
+      "Implemented a multidimensional optimization framework evaluating launch angle, propellant loading, and thermal buffering parameters against a weighted target-acquisition cost function.",
+      "Reconstructed full flight trajectories from perspective-corrected video data to calibrate drag coefficients, quantify thrust decay, and identify thermodynamic freeze-out effects.",
+      "Integrated Antoine-equation vapor pressure modeling and empirical efficiency corrections to improve prediction accuracy under real-world operating conditions.",
+      "Designed and fabricated a low-drag rocket airframe featuring an elliptical ABS nose cone and passively stabilized canted ASA fins for improved flight stability and range."
+    ],
+    links: [
+      { label: "Google Colab Codebase", url: "https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing" }
     ]
   },
   {
