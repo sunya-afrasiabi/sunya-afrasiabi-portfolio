@@ -26,6 +26,7 @@ export type Project = {
   role?: string
   outcomes?: string[]
   links?: { label: string; url: string }[]
+  videoUrl?: string // Add this line to support native YouTube embeds
 }
 
 export const projects: Project[] = [
