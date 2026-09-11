@@ -27,7 +27,8 @@ export type Project = {
   outcomes?: string[]
   links?: { label: string; url: string }[]
   videoUrl?: string
-  hideHeroImage?: boolean // <-- Add this new property
+  hideHeroImage?: boolean
+  gallery?: string[] // <-- Add this new property
 }
 
 export const projects: Project[] = [
