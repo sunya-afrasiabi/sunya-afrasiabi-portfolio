@@ -26,7 +26,8 @@ export type Project = {
   role?: string
   outcomes?: string[]
   links?: { label: string; url: string }[]
-  videoUrl?: string // Add this line to support native YouTube embeds
+  videoUrl?: string
+  hideHeroImage?: boolean // <-- Add this new property
 }
 
 export const projects: Project[] = [
@@ -42,7 +43,8 @@ export const projects: Project[] = [
       "To close the procurement loop, the platform equips sourcing officers with an actionable dashboard powered by Palantir AIP. The AI agent automatically summarizes viable replacements, evaluates engineering trade-offs, and executes a guided 3-step workflow to draft and send vendor communications, reducing sourcing timelines from weeks to minutes."
     ],
     tags: ["Palantir Foundry", "AIP", "Data Ontology", "API Integration"],
-    image: "", 
+    image: "/projects/compos.jpg", 
+    hideHeroImage: true,
     videoUrl: "https://www.youtube.com/embed/Tlzn4IAGWmQ",
     featured: true,
     outcomes: [
