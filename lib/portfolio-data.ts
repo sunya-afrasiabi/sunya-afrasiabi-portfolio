@@ -236,6 +236,7 @@ export type Role = {
   title: string
   org: string
   description: string
+  category: "Technical" | "Leadership"
 }
 
 export const roles: Role[] = [
@@ -244,36 +245,42 @@ export const roles: Role[] = [
     title: "Mechanical Engineer",
     org: "Munch Industries Inc",
     description: "Design and fabricate the awning and structural framework for Orble, an automated boba tea vending machine startup, using SolidWorks, laser cutting, 3D printing, and PVC fabrication.",
+    category: "Technical"
   },
   {
     period: "May 2026 - Present",
     title: "Undergraduate Researcher",
     org: "University of Pennsylvania, Li Group",
     description: "Conduct research on the design and fabrication of insect wing-inspired morphing structures, drawing on principles of bio-inspired engineering and adaptive systems. Design and model bio-inspired morphing geometries using Rhino and Grasshopper.",
+    category: "Technical"
   },
   {
     period: "Sept 2025 - Dec 2025",
     title: "Radiation Subteam Lead",
     org: "NASA Proposal Writing and Evaluation Experience, L’SPACE Program",
     description: "Developed innovative solution to the limitation of radiation-resistant materials in HDPE composites to enhance material performance under lunar radiation conditions. Contributed to technical proposal development and NASA mission review process. Ranked top 6 proposal out of 40+ teams.",
+    category: "Technical"
   },
   {
     period: "Jan 2026 - Present",
     title: "Outreach and Marketing Director",
     org: "Penn Astronomical Student Association (PASA)",
     description: "Led outreach initiatives and external partnerships to grow student engagement in astronomy programming. Secured $200 in external funding, developed telescope operation skills for weekly telescope observation nights, and coordinated cross-organizational events with campus groups.",
+    category: "Leadership"
   },
   {
     period: "Jan 2021 - Aug 2024",
     title: "Founder and Project Manager",
     org: "#MyStory Program",
     description: "Founded an initiative that aims to increase cultural awareness through a combination of oral history, narrative therapy, and portrait exhibition. Secured $24k+ through donations, fundraisers, and grant funding, including funding from Riley's Way Foundation, Prudential, Ashoka, and Peter&Elizabeth Tower Foundation. Collaborated with 20+ community partners and oversaw 40+ volunteers.",
+    category: "Leadership"
   },
   {
     period: "Sept 2024 - Present",
     title: "University Mascot",
     org: "University of Pennsylvania, Athletics",
     description: "Perform at athletics, alumni, and community events; engage large audiences through nonverbal communication, improvisation, and high-energy public engagement in fast-paced, high-visibility environments.",
+    category: "Leadership"
   },
 ]
 
