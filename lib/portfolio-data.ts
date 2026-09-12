@@ -89,7 +89,6 @@ export const projects: Project[] = [
     image: "/projects/compos.jpg", 
     gallery: [
       "https://youtu.be/Tlzn4IAGWmQ", // Slide 1: Your YouTube video
-      "/projects/chassis.png.jpg",   // Slide 2: A local image you already have
       "/sunya-profile.jpg"           // Slide 3: Another local image
     ],
     hideHeroImage: true,
