@@ -47,8 +47,11 @@ export const projects: Project[] = [
     image: "/projects/compos/compos.jpg",
     gallery: [
       "https://youtu.be/Tlzn4IAGWmQ", 
-      "/projects/compos/compos.jpg"
+      "/projects/mars.rover/chassis.jpg",
+      "/sunya-profile.jpg"
     ],
+    hideHeroImage: true,
+    videoUrl: "https://www.youtube.com/embed/Tlzn4IAGWmQ",
     featured: true,
     outcomes: [
       "Engineered a Palantir Foundry data ontology joining 41 National Stock Numbers (NSNs) with over 1,000 commercial candidates from DigiKey and Nexar/Octopart APIs.",
@@ -74,6 +77,7 @@ export const projects: Project[] = [
     ],
     tags: ["Fluid Mechanics", "Thermodynamics", "Python (SciPy)", "Numerical Integration"],
     image: "/projects/rocket/butane-rocket.jpg",
+    videoUrl: "/projects/rocket/rocket.launch.MOV",
     featured: true,
     outcomes: [
       "Designed a custom variable-mass multi-stage Euler integration solver in Python running at a 0.005-second timestep. [Code Architecture: https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing]",
@@ -81,6 +85,10 @@ export const projects: Project[] = [
       "Reconstructed full ballistic flight arcs via digital perspective video tracking to isolate transient fluid loss variables and adjust active aerodynamic drag coefficients.",
       "Launch Demonstration Video Link: /projects/rocket/rocket.launch.MOV",
       "Complete Experimental Trials & Calibration Logs Data Matrix: https://docs.google.com/spreadsheets/d/1GZ_oA8uZZpWpOq7V8PbKMCz3gbvjFobtUqlkufEcfhU/edit?usp=sharing"
+    ],
+    links: [
+      { label: "Google Colab Codebase", url: "https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing" },
+      { label: "Launch Demonstration Footage", url: "/projects/rocket/rocket.launch.MOV" }
     ]
   },
   {
