@@ -25,10 +25,10 @@ export function ProjectGallery({ items, title, isPortrait }: ProjectGalleryProps
 
   const currentItem = items[currentIndex]
 
-  // Smart URL parser for YouTube - FIXED to detect already-embedded URLs
+  // Smart URL parser for YouTube
   let youtubeSrc = null
   if (currentItem.includes("youtube.com/embed/")) {
-    youtubeSrc = currentItem // URL is already formatted perfectly!
+    youtubeSrc = currentItem
   } else if (currentItem.includes("youtu.be/")) {
     youtubeSrc = currentItem.replace("youtu.be/", "www.youtube.com/embed/")
   } else if (currentItem.includes("watch?v=")) {
@@ -39,68 +39,62 @@ export function ProjectGallery({ items, title, isPortrait }: ProjectGalleryProps
   const isVideo = youtubeSrc || isLocalVideo
 
   return (
-    <div className="relative mt-10 w-full overflow-hidden rounded-md border border-border bg-secondary/30 shadow-sm group">
+    <div className="mt-10 flex w-full items-center justify-center gap-2 sm:gap-4">
       
-      {/* Media Container */}
-      <div 
-        className={`flex items-center justify-center w-full ${
-          isPortrait && !isVideo
-            ? "max-w-md mx-auto aspect-[3/4] h-[550px]" 
-            : "aspect-video max-h-[600px]"
-        }`}
-      >
-        {youtubeSrc ? (
-          <iframe
-            src={youtubeSrc}
-            title={`${title} Video`}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            className="h-full w-full border-0 bg-black"
-          />
-        ) : isLocalVideo ? (
-          <video
-            src={currentItem}
-            controls
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="h-full w-full object-contain bg-black"
-          />
-        ) : (
-          <div className="relative h-full w-full p-4 flex items-center justify-center">
-            <Image
-              src={currentItem}
-              alt={`${title} - Media ${currentIndex + 1}`}
-              width={1200}
-              height={800}
-              className="max-w-full max-h-full w-auto h-auto object-contain"
-              priority={currentIndex === 0}
-            />
-          </div>
-        )}
-      </div>
-
-      {/* Navigation Arrows (Only show if > 1 item) */}
+      {/* Navigation Arrow (Left) */}
       {items.length > 1 && (
-        <>
-          <button
-            onClick={handlePrev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 flex size-10 items-center justify-center rounded-full bg-background/80 text-foreground shadow-md backdrop-blur transition-all hover:bg-primary hover:text-primary-foreground opacity-0 group-hover:opacity-100"
-            aria-label="Previous image"
-          >
-            <ChevronLeft className="size-6" />
-          </button>
-          
-          <button
-            onClick={handleNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 flex size-10 items-center justify-center rounded-full bg-background/80 text-foreground shadow-md backdrop-blur transition-all hover:bg-primary hover:text-primary-foreground opacity-0 group-hover:opacity-100"
-            aria-label="Next image"
-          >
-            <ChevronRight className="size-6" />
-          </button>
+        <button
+          onClick={handlePrev}
+          className="flex size-10 shrink-0 items-center justify-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:border-primary hover:text-primary"
+          aria-label="Previous media"
+        >
+          <ChevronLeft className="size-6" />
+        </button>
+      )}
 
-          {/* Dot Indicators */}
+      {/* Media Container */}
+      <div className="relative w-full overflow-hidden rounded-md border border-border bg-secondary/30 shadow-sm">
+        <div 
+          className={`flex items-center justify-center w-full ${
+            isPortrait && !isVideo
+              ? "max-w-md mx-auto aspect-[3/4] h-[550px]" 
+              : "aspect-video max-h-[600px]"
+          }`}
+        >
+          {youtubeSrc ? (
+            <iframe
+              src={youtubeSrc}
+              title={`${title} Video`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="h-full w-full border-0 bg-black"
+            />
+          ) : isLocalVideo ? (
+            <video
+              src={currentItem}
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-full w-full object-contain bg-black"
+            />
+          ) : (
+            <div className="relative h-full w-full p-4 flex items-center justify-center">
+              <Image
+                src={currentItem}
+                alt={`${title} - Media ${currentIndex + 1}`}
+                width={1200}
+                height={800}
+                className="max-w-full max-h-full w-auto h-auto object-contain"
+                priority={currentIndex === 0}
+              />
+            </div>
+          )}
+        </div>
+
+        {/* Dot Indicators */}
+        {items.length > 1 && (
           <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
             {items.map((_, idx) => (
               <button
@@ -113,8 +107,20 @@ export function ProjectGallery({ items, title, isPortrait }: ProjectGalleryProps
               />
             ))}
           </div>
-        </>
+        )}
+      </div>
+
+      {/* Navigation Arrow (Right) */}
+      {items.length > 1 && (
+        <button
+          onClick={handleNext}
+          className="flex size-10 shrink-0 items-center justify-center rounded-full border border-border bg-card text-muted-foreground shadow-sm transition-all hover:border-primary hover:text-primary"
+          aria-label="Next media"
+        >
+          <ChevronRight className="size-6" />
+        </button>
       )}
+      
     </div>
   )
 }
