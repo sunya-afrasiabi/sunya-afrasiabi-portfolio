@@ -56,7 +56,7 @@ export const projects: Project[] = [
     slug: "bubble-tea-awning",
     year: "Current",
     role: "Mechanical Engineer",
-    title: "Structural Hardware for Automated Vending",
+    title: "Orble: Automated Vending Machine",
     description: "Currently designing and manufacturing the exterior framework, awning, and high-visibility signage for deployment at 30th Street Station using a hybrid workflow of 3D printing, laser-cut acrylics, and custom mounting solutions.",
     longDescription: [
       "As a Mechanical Engineer for Munch Industries Inc., I am currently designing and manufacturing the structural framework, awning, and signage for Orble, an automated boba tea vending machine startup. Because the machines are slated for high-visibility public deployments, such as Philadelphia's 30th Street Station, the structural components require a clean, professional aesthetic while maintaining robust structural integrity. To ensure readability from over 10 feet away, I optimized the typography and layout for high visual contrast, sizing the text between 1.75 and 4.5 inches tall depending on the specific machine constraints. The primary engineering challenge involves adapting the mounting hardware to varying environments, ranging from securing heavy components to wooden posts using L-brackets and wood screws, to designing custom 3D-printed slot channels secured with 3M VHB tape for direct chassis integration.",
