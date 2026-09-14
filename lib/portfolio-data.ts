@@ -92,8 +92,7 @@ export const projects: Project[] = [
     image: "/projects/compos/compos.jpg",
     gallery: [
       "https://youtu.be/Tlzn4IAGWmQ", 
-      "/projects/mars.rover/chassis.jpg",
-      "/sunya-profile.jpg"
+      ""
     ],
     hideHeroImage: true,
     videoUrl: "https://www.youtube.com/embed/Tlzn4IAGWmQ",
@@ -122,18 +121,19 @@ export const projects: Project[] = [
     ],
     tags: ["Fluid Mechanics", "Thermodynamics", "Python (SciPy)", "Numerical Integration"],
     image: "/projects/rocket/butane-rocket.jpg",
-    videoUrl: "/projects/rocket/rocket.launch.MOV",
+    gallery: [
+    "https://youtu.be/g0mR2ZqzE1I",
+    "/projects/rocket/butane-rocket.jpg"
+    ]
     featured: true,
     outcomes: [
       "Designed a custom variable-mass multi-stage Euler integration solver in Python running at a 0.005-second timestep. [Code Architecture: https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing]",
       "Developed a multi-variable grid search routine optimizing launch angles, propellant loading, and thermal buffering functions against a heavily weighted cost matrix.",
       "Reconstructed full ballistic flight arcs via digital perspective video tracking to isolate transient fluid loss variables and adjust active aerodynamic drag coefficients.",
-      "Launch Demonstration Video Link: /projects/rocket/rocket.launch.MOV",
-      "Complete Experimental Trials & Calibration Logs Data Matrix: https://docs.google.com/spreadsheets/d/1GZ_oA8uZZpWpOq7V8PbKMCz3gbvjFobtUqlkufEcfhU/edit?usp=sharing"
     ],
     links: [
       { label: "Google Colab Codebase", url: "https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing" },
-      { label: "Launch Demonstration Footage", url: "/projects/rocket/rocket.launch.MOV" }
+      { label: "Calibration Logs", url: "https://docs.google.com/spreadsheets/d/1GZ_oA8uZZpWpOq7V8PbKMCz3gbvjFobtUqlkufEcfhU/edit?usp=sharing" }
     ]
   },
   {
