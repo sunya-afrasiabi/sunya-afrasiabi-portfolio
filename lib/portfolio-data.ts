@@ -97,7 +97,7 @@ export const projects: Project[] = [
       "To close the procurement loop, the platform equips sourcing officers with an actionable dashboard powered by Palantir AIP. The AI agent automatically summarizes viable replacements, evaluates engineering trade-offs, and executes a guided 3-step workflow to draft and send vendor communications, reducing sourcing timelines from weeks to minutes.",
     ],
     tags: ["Palantir Foundry", "AIP", "Data Ontology", "API Integration"],
-    image: "/projects/compos/compos.jpg",
+    image: "/projects/compos/dash.2.jpg",
     hideHeroImage: true,
     gallery: [
       "https://www.youtube.com/embed/Tlzn4IAGWmQ",
