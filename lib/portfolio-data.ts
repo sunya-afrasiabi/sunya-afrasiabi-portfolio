@@ -65,9 +65,8 @@ export const projects: Project[] = [
     tags: ["SolidWorks", "DFM (Design for Manufacture)", "3D Printing", "Laser Cutting"],
     image: "/projects/orble/machine.view.1.jpg",
     gallery: [
-      "/projects/orble/machine.cad.mp4", 
+      "https://youtu.be/qgYUs2twiL0", 
       "/projects/orble/machine.view.1.jpg",
-      "/projects/orble/machine.view.2.jpg",
       "/projects/orble/brackets.jpg"
     ],
     featured: false,
