@@ -69,7 +69,7 @@ export const projects: Project[] = [
       "/projects/orble/machine.view.1.jpg",
       "/projects/orble/brackets.jpg"
     ],
-    featured: false,
+    featured: true,
     outcomes: [
       "Designed and fabricated high-contrast acrylic signage and awning components for public-facing automated vending machines deployed at 30th Street Station.",
       "Engineered location-specific mounting solutions, including heavy-duty L-bracket structural supports and custom 3D-printed slot-channel clamps secured with 3M VHB tape, to prevent heavy acrylic panels from shearing off the machine.",
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     ],
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
     image: "/projects/lspace/lspace.png",
-    featured: true,
+    featured: false,
     outcomes: [
       "Developed skills in: technical proposal writing, project planning and risk assessment, and scientific and technical documentation.",
       "Final proposal scored in top 6 out of 40+ national teams."
