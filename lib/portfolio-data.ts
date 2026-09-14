@@ -65,7 +65,7 @@ export const projects: Project[] = [
     tags: ["SolidWorks", "DFM (Design for Manufacture)", "3D Printing", "Laser Cutting"],
     image: "/projects/orble/machine.view.1.jpg",
     gallery: [
-      "https://youtu.be/qgYUs2twiL0", 
+      "https://youtu.be/qgYUs2twiL0",
       "/projects/orble/machine.view.1.jpg",
       "/projects/orble/brackets.jpg"
     ],
@@ -118,9 +118,9 @@ export const projects: Project[] = [
     tags: ["Fluid Mechanics", "Thermodynamics", "Python (SciPy)", "Numerical Integration"],
     image: "/projects/rocket/butane-rocket.jpg",
     gallery: [
-    "https://youtu.be/g0mR2ZqzE1I",
-    "/projects/rocket/butane-rocket.jpg"
-    ]
+      "https://youtu.be/g0mR2ZqzE1I",
+      "/projects/rocket/butane-rocket.jpg"
+    ],
     featured: true,
     outcomes: [
       "Designed a custom variable-mass multi-stage Euler integration solver in Python running at a 0.005-second timestep. [Code Architecture: https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing]",
@@ -192,7 +192,6 @@ export const projects: Project[] = [
       "Collaborated on a five-person team to deploy the machinery and construct a winter greenhouse enabling year-round crop cultivation."
     ],
   },
-  
 ]
 
 export type Writing = {
