@@ -91,7 +91,13 @@ export const projects: Project[] = [
     tags: ["Palantir Foundry", "AIP", "Data Ontology", "API Integration"],
     image: "/projects/compos/compos.jpg",
     hideHeroImage: true,
-    videoUrl: "https://www.youtube.com/embed/Tlzn4IAGWmQ",
+    gallery:
+    [
+    "https://www.youtube.com/embed/Tlzn4IAGWmQ",
+    "/projects/compos/dash.1.jpg",
+    "/projects/compos/dash.2.jpg",
+    "/projects/compos/dash.3.jpg",
+    ]
     featured: true,
     outcomes: [
       "Engineered a Palantir Foundry data ontology joining 41 National Stock Numbers (NSNs) with over 1,000 commercial candidates from DigiKey and Nexar/Octopart APIs.",
@@ -123,7 +129,7 @@ export const projects: Project[] = [
     ],
     featured: true,
     outcomes: [
-      "Designed a custom variable-mass multi-stage Euler integration solver in Python running at a 0.005-second timestep. [Code Architecture: https://colab.research.google.com/drive/1Ibv-5OsyrvuQJYkHpkiBurK4cnaGsRCC?usp=sharing]",
+      "Designed a custom variable-mass multi-stage Euler integration solver in Python running at a 0.005-second timestep.",
       "Developed a multi-variable grid search routine optimizing launch angles, propellant loading, and thermal buffering functions against a heavily weighted cost matrix.",
       "Reconstructed full ballistic flight arcs via digital perspective video tracking to isolate transient fluid loss variables and adjust active aerodynamic drag coefficients.",
     ],
