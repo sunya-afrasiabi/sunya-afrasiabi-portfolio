@@ -90,10 +90,6 @@ export const projects: Project[] = [
     ],
     tags: ["Palantir Foundry", "AIP", "Data Ontology", "API Integration"],
     image: "/projects/compos/compos.jpg",
-    gallery: [
-      "https://youtu.be/Tlzn4IAGWmQ", 
-      ""
-    ],
     hideHeroImage: true,
     videoUrl: "https://www.youtube.com/embed/Tlzn4IAGWmQ",
     featured: true,
