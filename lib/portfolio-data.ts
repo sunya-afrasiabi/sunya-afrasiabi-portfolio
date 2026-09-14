@@ -63,7 +63,7 @@ export const projects: Project[] = [
       "I modeled the custom 3D-printed bases, signage, and structural clearances in CAD before moving to physical assembly. To navigate the maximum dimensional limits of our available laser cutters and 3D printers, I utilized a carefully planned hybrid manufacturing approach. This workflow included laser-cutting 1/4-inch black acrylic panels, applying permanent adhesive vinyl for branding, and integrating rubber washers to safely distribute torque and prevent the acrylic from cracking under concentrated stress from the mounting fasteners."
     ],
     tags: ["SolidWorks", "DFM (Design for Manufacture)", "3D Printing", "Laser Cutting"],
-    image: "projects/orble/machine.view.1.jpg", 
+    image: "/projects/orble/machine.view.1.jpg",
     gallery: [
       "/projects/orble/machine.cad.mp4", 
       "/projects/orble/machine.view.1.jpg",
