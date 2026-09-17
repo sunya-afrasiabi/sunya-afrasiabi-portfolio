@@ -244,6 +244,9 @@ export const projects: Project[] = [
       "Fabricated the system using rapid prototyping methods, combining wood framing, custom fasteners, and acrylic panels.",
       "Collaborated on a five-person team to deploy the machinery and construct a winter greenhouse enabling year-round crop cultivation.",
     ],
+    links: [
+      { label: "View LinkedIn Feature", url: "https://www.linkedin.com/posts/engineerswithoutborders-urbanfarming-sustainableengineering-share-7303131951765344256-RRAe/" }
+    ]
   },
 ]
 
