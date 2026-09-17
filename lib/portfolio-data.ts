@@ -233,6 +233,7 @@ export const projects: Project[] = [
     image: "/projects/seed.cleaner/seed-cleaner.jpg",
     featured: false,
     gallery: [
+    "https://youtu.be/1a_jvoOgsRI",
     "https://youtu.be/e9ASCarWNgY",
     "/projects/seed.cleaner/seed-cleaner.jpg"
     ],
