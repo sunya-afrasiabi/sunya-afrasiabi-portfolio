@@ -232,6 +232,10 @@ export const projects: Project[] = [
     ],
     image: "/projects/seed.cleaner/seed-cleaner.jpg",
     featured: false,
+    gallery: [
+    "https://youtu.be/e9ASCarWNgY",
+    "/projects/seed.cleaner/seed-cleaner.jpg"
+    ],
     role: "Farm Committee | Engineers without Borders",
     outcomes: [
       "Automated post-harvest processing by separating viable seeds from lightweight chaff through vacuum-powered aspiration.",
