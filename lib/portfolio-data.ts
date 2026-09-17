@@ -235,7 +235,8 @@ export const projects: Project[] = [
     gallery: [
     "https://youtu.be/1a_jvoOgsRI",
     "https://youtu.be/e9ASCarWNgY",
-    "/projects/seed.cleaner/seed-cleaner.jpg"
+    "/projects/seed.cleaner/seed-cleaner.jpg",
+    "/projects/seed.cleaner/greenhouse.jpg"
     ],
     role: "Farm Committee | Engineers without Borders",
     outcomes: [
