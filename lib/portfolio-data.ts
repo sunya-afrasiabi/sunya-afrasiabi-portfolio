@@ -129,7 +129,7 @@ export const projects: Project[] = [
     role: "Systems Engineer | DNHacks",
     title: "CompOS: AI-Powered Missile Component Sourcing",
     description:
-      "An AI-powered Foundry application that expedites sourcing workflows by scoring dual-use commercial replacements for military-grade components.",
+      "An AI-powered Palantir Foundry application that expedites sourcing workflows by scoring dual-use commercial replacements for military-grade components.",
     longDescription: [
       "The defense supply chain faces critical production bottlenecks due to the specialized, single-source nature of military-grade components. To accelerate component diversification, our team designed CompOS: a dual-use component sourcing application built on Palantir Foundry that evaluates commercial alternatives against stringent MIL-SPEC requirements.",
       "CompOS joins government catalog data (PUB LOG) with live commercial distributor APIs (DigiKey, Octopart) to construct rigorous requirement profiles. The system scores each commercial candidate across three distinct dimensions: substitution risk (evaluating hard and soft technical gates), qualification burden (identifying required testing like thermal shock or lot traceability), and supply chain viability (evaluating stock and lead time).",
