@@ -92,7 +92,7 @@ export default function HomePage() {
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
                 Currently designing and modeling a bio-inspired wing morphing
-                structure using Grasshopper and Rhino, to be printed at Cornell
+                structure using Grasshopper and Rhino, for aerospace and other materials applications, to be printed at Cornell
                 University using powder-based 3D printers.
               </p>
             </div>
@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
             <div className="flex-1">
               <h3 className="font-semibold text-foreground">
-                Structural Hardware for Automated Vending
+                Orble: Automated Vending Machine
               </h3>
               <p className="mt-1 font-sans text-xs text-muted-foreground">
                 Orble, Munch Industries Inc.
