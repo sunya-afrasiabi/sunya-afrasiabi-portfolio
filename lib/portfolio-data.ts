@@ -101,9 +101,9 @@ export const projects: Project[] = [
     ],
     image: "/projects/orble/machine.view.1.jpg",
     gallery: [
-      "https://youtu.be/qgYUs2twiL0",
-      "/projects/orble/machine.view.1.jpg",
-      "/projects/orble/brackets.jpg",
+      { src: "https://youtu.be/qgYUs2twiL0", alt: "Orble: Automated Vending Machine video" },
+      { src: "/projects/orble/machine.view.1.jpg", alt: "Orble: Automated Vending Machine" },
+      { src: "/projects/orble/brackets.jpg", alt: "Orble: Automated Vending Machine" },
     ],
     featured: true,
     outcomes: [
@@ -129,10 +129,10 @@ export const projects: Project[] = [
     image: "/projects/compos/dash.2.jpg",
     hideHeroImage: true,
     gallery: [
-      "https://www.youtube.com/embed/Tlzn4IAGWmQ",
-      "/projects/compos/dash.1.jpg",
-      "/projects/compos/dash.2.jpg",
-      "/projects/compos/dash.3.jpg",
+      { src: "https://www.youtube.com/embed/Tlzn4IAGWmQ", alt: "CompOS: AI-Powered Missile Component Sourcing video" },
+      { src: "/projects/compos/dash.1.jpg", alt: "CompOS: AI-Powered Missile Component Sourcing" },
+      { src: "/projects/compos/dash.2.jpg", alt: "CompOS: AI-Powered Missile Component Sourcing" },
+      { src: "/projects/compos/dash.3.jpg", alt: "CompOS: AI-Powered Missile Component Sourcing" },
     ],
     featured: true,
     outcomes: [
@@ -177,8 +177,8 @@ export const projects: Project[] = [
     ],
     image: "/projects/rocket/butane-rocket.jpg",
     gallery: [
-      "https://youtu.be/g0mR2ZqzE1I",
-      "/projects/rocket/butane-rocket.jpg",
+      { src: "https://youtu.be/g0mR2ZqzE1I", alt: "Multi-Phase Butane Rocket Targeting & Numerical Simulation video" },
+      { src: "/projects/rocket/butane-rocket.jpg", alt: "Multi-Phase Butane Rocket Targeting & Numerical Simulation" },
     ],
     featured: false,
     outcomes: [
@@ -266,10 +266,10 @@ export const projects: Project[] = [
     image: "/projects/seed.cleaner/seed-cleaner.jpg",
     featured: false,
     gallery: [
-    "https://youtu.be/1a_jvoOgsRI",
-    "https://youtu.be/e9ASCarWNgY",
-    "/projects/seed.cleaner/seed-cleaner.jpg",
-    "/projects/seed.cleaner/greenhouse.jpg"
+      { src: "https://youtu.be/1a_jvoOgsRI", alt: "Vacuum-powered Seed Cleaner video" },
+      { src: "https://youtu.be/e9ASCarWNgY", alt: "Vacuum-powered Seed Cleaner video" },
+      { src: "/projects/seed.cleaner/seed-cleaner.jpg", alt: "Vacuum-powered Seed Cleaner" },
+      { src: "/projects/seed.cleaner/greenhouse.jpg", alt: "Vacuum-powered Seed Cleaner" },
     ],
     role: "Farm Committee | Engineers without Borders",
     outcomes: [
