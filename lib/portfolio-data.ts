@@ -102,8 +102,18 @@ export const projects: Project[] = [
     image: "/projects/orble/machine.view.1.jpg",
     gallery: [
       { src: "https://youtu.be/qgYUs2twiL0", alt: "Orble: Automated Vending Machine video" },
-      { src: "/projects/orble/machine.view.1.jpg", alt: "Orble: Automated Vending Machine" },
-      { src: "/projects/orble/brackets.jpg", alt: "Orble: Automated Vending Machine" },
+      {
+        src: "/projects/orble/machine.view.1.jpg",
+        alt: "Orble: Automated Vending Machine",
+        caption:
+          "This is the physically manufactured structure based off of the CAD. The process included meticulous material procurement followed by physical manufacturing of select parts through sawing, painting/priming, drilling, and PVC fabrication.",
+      },
+      {
+        src: "/projects/orble/brackets.jpg",
+        alt: "Orble: Automated Vending Machine",
+        caption:
+          "Physical brackets created through custom CAD and 3D printed to improve structural integrity of acrylic signs.",
+      },
     ],
     featured: true,
     outcomes: [
@@ -130,9 +140,23 @@ export const projects: Project[] = [
     hideHeroImage: true,
     gallery: [
       { src: "https://www.youtube.com/embed/Tlzn4IAGWmQ", alt: "CompOS: AI-Powered Missile Component Sourcing video" },
-      { src: "/projects/compos/dash.1.jpg", alt: "CompOS: AI-Powered Missile Component Sourcing" },
-      { src: "/projects/compos/dash.2.jpg", alt: "CompOS: AI-Powered Missile Component Sourcing" },
-      { src: "/projects/compos/dash.3.jpg", alt: "CompOS: AI-Powered Missile Component Sourcing" },
+      {
+        src: "/projects/compos/dash.1.jpg",
+        alt: "CompOS: AI-Powered Missile Component Sourcing",
+        caption: "Dashboard home page, with items for review.",
+      },
+      {
+        src: "/projects/compos/dash.2.jpg",
+        alt: "CompOS: AI-Powered Missile Component Sourcing",
+        caption:
+          "Candidate detail page. It includes a composite score based off of a hardcoded decision matrix to determine viability of item. It also uses an LLM to provide a detailed overview and determine its applicability.",
+      },
+      {
+        src: "/projects/compos/dash.3.jpg",
+        alt: "CompOS: AI-Powered Missile Component Sourcing",
+        caption:
+          "Emailer feature. Allows item to be sent to supply chain manager or other related individuals to determine if item can be replaced. AI editor is available to make changes to the email.",
+      },
     ],
     featured: true,
     outcomes: [
@@ -178,7 +202,12 @@ export const projects: Project[] = [
     image: "/projects/rocket/butane-rocket.jpg",
     gallery: [
       { src: "https://youtu.be/g0mR2ZqzE1I", alt: "Multi-Phase Butane Rocket Targeting & Numerical Simulation video" },
-      { src: "/projects/rocket/butane-rocket.jpg", alt: "Multi-Phase Butane Rocket Targeting & Numerical Simulation" },
+      {
+        src: "/projects/rocket/butane-rocket.jpg",
+        alt: "Multi-Phase Butane Rocket Targeting & Numerical Simulation",
+        caption:
+          "Butane-powered rocket with custom-designed parts such as 3D printed fins and elliptical nose cone to improve aerodynamic abilities.",
+      },
     ],
     featured: false,
     outcomes: [
@@ -216,6 +245,13 @@ export const projects: Project[] = [
     ],
     image: "/projects/mars.rover/chassis.jpg",
     featured: false,
+    gallery: [
+      {
+        src: "/projects/mars.rover/chassis.jpg",
+        alt: "Rover Chassis",
+        caption: "CAD Design of Mars Rover chassis.",
+      },
+    ],
     role: "Chassis Team | UPenn Mars Rover Club",
     outcomes: [
       "Designed precise SolidWorks suspension assemblies to eliminate kinematic interference throughout the full range of angular motion.",
@@ -242,6 +278,14 @@ export const projects: Project[] = [
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
     image: "/projects/lspace/npwee.certificate.jpg",
     featured: true,
+    gallery: [
+      {
+        src: "/projects/lspace/npwee.certificate.jpg",
+        alt: "NASA L'SPACE Proposal Writing & Evaluation Experience",
+        caption:
+          "NASA L'Space Certificate of Completion: It recognizes the completion of the educational programming as well as the proposal writing itself. It also recognizes that I sat and participated in a NASA review panel.",
+      },
+    ],
     outcomes: [
       "Developed skills in: technical proposal writing, project planning and risk assessment, and scientific and technical documentation.",
       "Final proposal scored in top 6 out of 40+ national teams.",
@@ -268,8 +312,17 @@ export const projects: Project[] = [
     gallery: [
       { src: "https://youtu.be/1a_jvoOgsRI", alt: "Vacuum-powered Seed Cleaner video" },
       { src: "https://youtu.be/e9ASCarWNgY", alt: "Vacuum-powered Seed Cleaner video" },
-      { src: "/projects/seed.cleaner/seed-cleaner.jpg", alt: "Vacuum-powered Seed Cleaner" },
-      { src: "/projects/seed.cleaner/greenhouse.jpg", alt: "Vacuum-powered Seed Cleaner" },
+      {
+        src: "/projects/seed.cleaner/seed-cleaner.jpg",
+        alt: "Vacuum-powered Seed Cleaner",
+        caption: "Vacuum-powered Seed Cleaner at Novick Urban Farm.",
+      },
+      {
+        src: "/projects/seed.cleaner/greenhouse.jpg",
+        alt: "Vacuum-powered Seed Cleaner",
+        caption:
+          "In addition, we constructed a winter greenhouse enabling year-round crop cultivation.",
+      },
     ],
     role: "Farm Committee | Engineers without Borders",
     outcomes: [
