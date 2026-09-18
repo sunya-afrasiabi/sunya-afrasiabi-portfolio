@@ -29,6 +29,7 @@ export type Project = {
   videoUrl?: string
   hideHeroImage?: boolean
   gallery?: string[]
+  teamSize?: string
 }
 
 export const projects: Project[] = [
@@ -118,6 +119,7 @@ export const projects: Project[] = [
       "Integrated AIP to automatically generate part summaries, engineering trade-off analyses, and procurement communications for sourcing officers.",
       "Designed an interactive visual dashboard enabling sourcing officers to approve or flag substitution candidates while maintaining a strict, write-back audit trail.",
     ],
+    teamSize: "4",
     links: [
       {
         label: "Pitch Deck & Slides",
@@ -144,6 +146,7 @@ export const projects: Project[] = [
       "We transitioned from an introductory Random Forest machine learning pipeline to a deterministic physics integration engine. Our final codebase runs a multi-stage Euler time-integration solver linking temperature-dependent vaporization profiles (Antoine Equation) with gas-phase isentropic nozzle flow expansions to predict optimal launch trajectories.",
       "Through 2D kinematics tracking reconstruction, we isolated thrust decay anomalies from atmospheric drag curves. This analysis proved that lower fluid configurations fell into endothermic freeze-out thresholds, prompting a grid-search penalty function to maximize targeted flight consistency.",
     ],
+    teamSize: "3",
     tags: [
       "Fluid Mechanics",
       "Thermodynamics",
@@ -179,9 +182,10 @@ export const projects: Project[] = [
     description:
       "Created under University Rover Challenge constraints, as part of Mars Rover Club.",
     longDescription: [
-      "As part of a three-person engineering team, we designed and modeled a structural chassis prototype for a Mars rover optimized around University Rover Challenge (URC) competition constraints. Using SolidWorks, we created detailed CAD assemblies and integrated individual components into a cohesive rover architecture. We applied Finite Element Analysis (FEA) to evaluate dynamic load paths and iteratively refined bracket placement, wall thicknesses, and ribbed pocket geometries to reduce mass while maintaining structural integrity under simulated operating conditions.",
+      "We designed and modeled a structural chassis prototype for a Mars rover optimized around University Rover Challenge (URC) competition constraints. Using SolidWorks, we created detailed CAD assemblies and integrated individual components into a cohesive rover architecture. We applied Finite Element Analysis (FEA) to evaluate dynamic load paths and iteratively refined bracket placement, wall thicknesses, and ribbed pocket geometries to reduce mass while maintaining structural integrity under simulated operating conditions.",
       "To manage high-impact loading scenarios, we developed a material strategy tailored to component-specific requirements. High-strength Grade 5 titanium rods and 3/8-inch threaded rods were incorporated to withstand peak tensile and bending stresses, while lightweight 3D-printed lattice structures were used for non-structural enclosures and rapid prototyping.",
     ],
+    teamSize: "3",
     tags: [
       "Kinematics",
       "Stress/ Strain Optimization",
@@ -212,6 +216,7 @@ export const projects: Project[] = [
       "After submitting our proposal, participants were trained as proposal reviewers and served on a NASA-style peer review panel. Evaluating competing proposals using structured scoring criteria provided valuable insight into how engineering projects are assessed for technical merit, feasibility, innovation, and execution. Experiencing both the proposal development and evaluation processes fundamentally changed how I approach engineering communication and project planning.",
       "Beyond the technical work, the program strengthened my ability to collaborate within a multidisciplinary engineering team operating in a virtual environment. Working alongside students with backgrounds in aerospace, mechanical engineering, materials science, and simulation reinforced the importance of interdisciplinary collaboration in solving complex engineering challenges.",
     ],
+    teamSize: "10",
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
     image: "/projects/lspace/npwee.certificate.jpg",
     featured: true,
@@ -250,6 +255,7 @@ export const projects: Project[] = [
       "Fabricated the system using rapid prototyping methods, combining wood framing, custom fasteners, and acrylic panels.",
       "Collaborated on a five-person team to deploy the machinery and construct a winter greenhouse enabling year-round crop cultivation.",
     ],
+    teamSize: "6",
     links: [
       { label: "View LinkedIn Feature", url: "https://www.linkedin.com/posts/engineerswithoutborders-urbanfarming-sustainableengineering-share-7303131951765344256-RRAe/" }
     ]
