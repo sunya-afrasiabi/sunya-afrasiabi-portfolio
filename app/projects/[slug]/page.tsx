@@ -36,15 +36,19 @@ export default async function ProjectDetailPage({
   
   const isPortraitProject = project.slug === "butane-rocket-targeting"
 
-  // Aggregate all media into a single array for the gallery
-  const mediaItems: string[] = []
+  // Aggregate all media into a single array of structured objects
+  const mediaItems: { src: string; alt: string; caption?: string }[] = []
   
   if (project.gallery && project.gallery.length > 0) {
     mediaItems.push(...project.gallery)
   } else {
     // Fallback: build a gallery array from existing videoUrl and image properties
-    if (project.videoUrl) mediaItems.push(project.videoUrl)
-    if (project.image && !project.hideHeroImage) mediaItems.push(project.image)
+    if (project.videoUrl) {
+      mediaItems.push({ src: project.videoUrl, alt: `${project.title} Demo Video` })
+    }
+    if (project.image && !("hideHeroImage" in project && project.hideHeroImage)) {
+      mediaItems.push({ src: project.image, alt: project.title })
+    }
   }
 
   return (
