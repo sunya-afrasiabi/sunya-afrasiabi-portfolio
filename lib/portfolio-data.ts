@@ -12,6 +12,11 @@ export const profile = {
     github: "https://github.com/sunya-afrasiabi",
   },
 }
+export type ProjectMedia = {
+  src: string
+  alt: string
+  caption?: string // Optional: only displays if you provide it!
+}
 
 export type Project = {
   slug: string
@@ -24,12 +29,12 @@ export type Project = {
   featured: boolean
   href?: string
   role?: string
+  teamSize?: string
   outcomes?: string[]
   links?: { label: string; url: string }[]
   videoUrl?: string
   hideHeroImage?: boolean
-  gallery?: string[]
-  teamSize?: string
+  gallery?: ProjectMedia[] // <-- Changed from string[] to ProjectMedia[]
 }
 
 export const projects: Project[] = [
@@ -48,10 +53,27 @@ export const projects: Project[] = [
     image: "/projects/lingli/dragonfly.jpg",
     featured: false,
     gallery: [
-    "/projects/lingli/dragonfly.jpg",
-    "/projects/lingli/model.1.jpg",
-    "/projects/lingli/model.2.jpg",
-    "/projects/lingli/model.3.jpg"
+      {
+      src: "/projects/lingli/dragonfly.jpg",
+      alt: "Dragonfly wing concept",
+      caption: "This is the initial concept of the dragonfly-wing inspired material. It reflects the biological mechanisms that make insect wings both lightweight and structurally efficient (including hydraulic hemolymph expansion, graded stiffness, corrugated geometries, and vein-membrane architectures).",
+      },
+      {
+      src: "/projects/lingli/model.1.jpg",
+      alt: "Model 1",
+      caption: "Model 1: Flat baseplate with a row of hollow cylinders. Tests inner diameter, wall thickness, and length together to find where powder can no longer be cleared and where pressurized air ruptures the wall.",
+      },
+      {
+      src: "/projects/lingli/model.2.jpg",
+      alt: "Model 2",
+      caption: "Model 2: Thick rectangular frame divided into cells, each holding a flat TPU film. Isolates whether the printer can produce a lighter, thinner film than the assumed measurements without tearing or developing holes.",
+      },
+      {
+      src: "/projects/lingli/model.3.jpg",
+      alt: "Model 3",
+      caption: "Model 3: A rigid outer frame with straight hollow tubes crossing the middle, with the empty spaces connected by thin membrane film — mixing dimensions validated in Models 1 and 2. Used as a last check before validating wing.",
+      }
+  
     ],
     outcomes: [
       "Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
