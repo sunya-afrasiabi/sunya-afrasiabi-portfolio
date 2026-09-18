@@ -46,6 +46,12 @@ export const projects: Project[] = [
     tags: ["Grasshopper", "Rhino", "3D Printing", "Biomimicry"],
     image: "/projects/lingli/dragonfly.jpg",
     featured: false,
+    gallery: [
+    "/projects/lingli/dragonfly.jpg",
+    "/projects/lingli/model.1.jpg",
+    "/projects/lingli/model.2.jpg",
+    "/projects/lingli/model.3.jpg"
+    ],
     outcomes: [
       "Conducted an interdisciplinary review of insect wing biomechanics, soft robotics, and deployable aerospace structures to establish engineering design principles for morphing wings.",
       "Derived parametric equations governing vein taper, corrugation amplitude, cell spacing, and mass distribution for bio-inspired wing geometries.",
