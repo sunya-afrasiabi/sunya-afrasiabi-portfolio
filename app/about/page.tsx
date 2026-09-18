@@ -35,7 +35,7 @@ export default function AboutPage() {
                 Dynamics, Controls, and Robotics Concentration
               </li>
               <li>
-                <strong className="font-medium text-foreground">BA in Philosophy:</strong>{" "}
+                <strong className="font-medium text-foreground">Double Major in Philosophy:</strong>{" "}
                 Philosophy of Science Concentration
               </li>
             </ul>
