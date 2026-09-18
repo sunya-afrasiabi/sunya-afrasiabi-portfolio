@@ -107,6 +107,43 @@ export default async function ProjectDetailPage({
 
         {/* ADDITIONAL INFO (SIDEBAR) */}
         <div className="space-y-8">
+          
+          {/* PROJECT SPECS */}
+          <aside className="h-fit rounded-md border border-border bg-card p-6">
+            <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground">
+              Project Specs
+            </h2>
+            <dl className="mt-5 space-y-4 text-sm">
+              <div>
+                <dt className="text-muted-foreground">Timeline</dt>
+                <dd className="mt-1 font-medium text-foreground">{project.year}</dd>
+              </div>
+              
+              {project.role && (
+                <div>
+                  <dt className="text-muted-foreground">Role</dt>
+                  <dd className="mt-1 font-medium text-foreground">{project.role}</dd>
+                </div>
+              )}
+              
+              {"teamSize" in project && project.teamSize && (
+                <div>
+                  <dt className="text-muted-foreground">Team Size</dt>
+                  <dd className="mt-1 font-medium text-foreground">{String(project.teamSize)}</dd>
+                </div>
+              )}
+              
+              {project.tags && project.tags.length > 0 && (
+                <div>
+                  <dt className="text-muted-foreground">Tools & Skills</dt>
+                  <dd className="mt-1 font-medium leading-relaxed text-foreground">
+                    {project.tags.join(", ")}
+                  </dd>
+                </div>
+              )}
+            </dl>
+          </aside>
+
           {project.outcomes && project.outcomes.length > 0 && (
             <aside className="h-fit rounded-md border border-border bg-card p-6">
               <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground">
@@ -136,7 +173,7 @@ export default async function ProjectDetailPage({
                       rel="noopener noreferrer"
                       className="group inline-flex items-center justify-between w-full rounded-sm border border-border bg-secondary/50 p-3 text-sm text-foreground transition-all hover:border-primary hover:bg-secondary"
                     >
-                      <span className="font-medium transition-colors group-hover:text-primary line-clamp-1">
+                      <span className="line-clamp-1 font-medium transition-colors group-hover:text-primary">
                         {link.label}
                       </span>
                       <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary" />
