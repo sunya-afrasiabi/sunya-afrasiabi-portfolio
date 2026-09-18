@@ -96,13 +96,13 @@ export const projects: Project[] = [
     role: "Systems Engineer | DNHacks",
     title: "CompOS: AI-Powered Missile Component Sourcing",
     description:
-      "An AI-powered Palantir Foundry application that expedites defense sourcing workflows by scoring dual-use commercial replacements for military-grade components.",
+      "An AI-powered Foundry application that expedites sourcing workflows by scoring dual-use commercial replacements for military-grade components.",
     longDescription: [
       "The defense supply chain faces critical production bottlenecks due to the specialized, single-source nature of military-grade components. To accelerate component diversification, our team designed CompOS: a dual-use component sourcing application built on Palantir Foundry that evaluates commercial alternatives against stringent MIL-SPEC requirements.",
       "CompOS joins government catalog data (PUB LOG) with live commercial distributor APIs (DigiKey, Octopart) to construct rigorous requirement profiles. The system scores each commercial candidate across three distinct dimensions: substitution risk (evaluating hard and soft technical gates), qualification burden (identifying required testing like thermal shock or lot traceability), and supply chain viability (evaluating stock and lead time).",
-      "To close the procurement loop, the platform equips sourcing officers with an actionable dashboard powered by Palantir AIP. The AI agent automatically summarizes viable replacements, evaluates engineering trade-offs, and executes a guided 3-step workflow to draft and send vendor communications, reducing sourcing timelines from weeks to minutes.",
+      "To close the procurement loop, the platform equips sourcing officers with an actionable dashboard powered by AIP. The AI agent automatically summarizes viable replacements, evaluates engineering trade-offs, and executes a guided 3-step workflow to draft and send vendor communications, reducing sourcing timelines from weeks to minutes.",
     ],
-    tags: ["Palantir Foundry", "AIP", "Data Ontology", "API Integration"],
+    tags: ["Foundry", "AIP", "Data Ontology", "API Integration"],
     image: "/projects/compos/dash.2.jpg",
     hideHeroImage: true,
     gallery: [
@@ -113,9 +113,9 @@ export const projects: Project[] = [
     ],
     featured: true,
     outcomes: [
-      "Engineered a Palantir Foundry data ontology joining 41 National Stock Numbers (NSNs) with over 1,000 commercial candidates from DigiKey and Nexar/Octopart APIs.",
+      "Engineered a Foundry data ontology joining 41 National Stock Numbers (NSNs) with over 1,000 commercial candidates from DigiKey and Nexar/Octopart APIs.",
       "Developed a multi-dimensional scoring algorithm that evaluates hard technical gates, weighted soft attributes, and qualification burdens without falsely flagging unknown data as compliant.",
-      "Integrated Palantir AIP to automatically generate part summaries, engineering trade-off analyses, and procurement communications for sourcing officers.",
+      "Integrated AIP to automatically generate part summaries, engineering trade-off analyses, and procurement communications for sourcing officers.",
       "Designed an interactive visual dashboard enabling sourcing officers to approve or flag substitution candidates while maintaining a strict, write-back audit trail.",
     ],
     links: [
