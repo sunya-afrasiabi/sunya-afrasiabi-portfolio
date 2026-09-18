@@ -155,7 +155,7 @@ export const projects: Project[] = [
       "https://youtu.be/g0mR2ZqzE1I",
       "/projects/rocket/butane-rocket.jpg",
     ],
-    featured: true,
+    featured: false,
     outcomes: [
       "Designed a custom variable-mass multi-stage Euler integration solver in Python running at a 0.005-second timestep.",
       "Developed a multi-variable grid search routine optimizing launch angles, propellant loading, and thermal buffering functions against a heavily weighted cost matrix.",
@@ -214,7 +214,7 @@ export const projects: Project[] = [
     ],
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
     image: "/projects/lspace/npwee.certificate.jpg",
-    featured: false,
+    featured: true,
     outcomes: [
       "Developed skills in: technical proposal writing, project planning and risk assessment, and scientific and technical documentation.",
       "Final proposal scored in top 6 out of 40+ national teams.",
