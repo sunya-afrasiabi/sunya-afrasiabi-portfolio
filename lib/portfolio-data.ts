@@ -131,6 +131,64 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "menin",
+    year: "Fall 2026",
+    role: "Co-Creator | Cal Hacks 13.0",
+    teamSize: "3",
+    title: "MeNIN: Live Voice Poetry Arena Judged by Homer",
+    description:
+      "A live multiplayer voice-poetry battle and Greek games arena where a laptop browser hosts the stage, each player's iPhone acts as a hands-free mic and motion controller, and Homer judges verses out loud in real time.",
+    longDescription: [
+      "Named after the first word of the Iliad (mēnin, meaning rage), MeNIN trains spoken-word improvisation the way the ancient Greeks practiced it: live, out loud, and competitive. One laptop browser runs the shared arena while every player's iPhone serves as their hands-free microphone, private formula hand, haptic beat trainer, and motion controller across seven modes—including live free-verse poetry battles, Socratic debates, discus throws, Stadion sprints, boxing, and webcam-tracked archery.",
+      "The system coordinates four deployables: a SwiftUI iOS app, a React/Vite web arena, a Python FastAPI agent service, and a 2,070-line server-authoritative SpacetimeDB module (27 tables, 45 reducers, and row-level security for private cards) streaming live voice and motion inputs at 10–40 Hz. Phones stream directly to Cartesia ink-2 STT using short-lived server-minted tokens with dynamic keyterm injection, while Cartesia sonic-3.6 delivers Homer's spoken verdicts and stitched finale songs in under 90 ms.",
+      "Each round, Homer writes a fresh Bronze Age theme and deals three relevant Homeric formulas ranked in real time by Moss from a 180-phrase bank—nearly a third of which was mined from Project Gutenberg translations via a custom Apify Actor (Epithet Miner). Claude Opus 5.5 streams structured judgments on Image, Answer, and Craft in ~1.0 s (p50), paired with a deterministic CMU Pronouncing Dictionary stress scanner for lesson rhythm scoring and a Fetch.ai Agentverse integration for asynchronous play.",
+    ],
+    tags: ["SpacetimeDB", "Voice AI", "FastAPI", "SwiftUI"],
+    image: "/projects/menin/cover.jpg",
+    hideHeroImage: true,
+    featured: true,
+    gallery: [
+      {
+        src: "https://www.youtube.com/embed/gvGEeuahLdE",
+        alt: "MeNIN live voice poetry arena demo video",
+        caption:
+          "2:41 walkthrough of MeNIN at Cal Hacks 13.0: live voice poetry battles judged out loud by Homer, Socratic debates, and iPhone-controlled Greek games.",
+      },
+    ],
+    outcomes: [
+      "Architected a four-part real-time multiplayer stack (SwiftUI, React/Vite, FastAPI, and SpacetimeDB) verified by 232 automated smoke checks and multi-battle WebSocket soak tests with seamless airplane-mode reconnect recovery.",
+      "Cut noisy speech-to-text word error rate from 20% to 3% using Cartesia ink-2 dynamic keyterms (62–81 ms final transcript latency) and delivered Homer's first TTS audio in 78–90 ms without routing raw audio through the backend.",
+      "Built a sub-second live judging and dealing pipeline combining streamed Claude Opus 5.5 verdicts (p50 1.0 s), Moss semantic formula ranking (p50 13.2 ms across 180 formulas), and a custom Apify Actor that mined 55 public-domain Homeric epithets.",
+      "Forked and patched the community spacetimedb-swift SDK to fix per-room subscriptions, duplicate rows, and reconnect state caching (86 passing Swift tests, submitted upstream).",
+    ],
+    links: [
+      {
+        label: "Try Live Arena",
+        url: "https://play.206.189.237.157.sslip.io/homer",
+      },
+      {
+        label: "GitHub Repository",
+        url: "https://github.com/sunya-afrasiabi/MeNIN",
+      },
+      {
+        label: "Devpost Submission",
+        url: "https://devpost.com/software/menin",
+      },
+      {
+        label: "Watch Demo Video",
+        url: "https://youtu.be/gvGEeuahLdE",
+      },
+      {
+        label: "Figma Stage Log Deck",
+        url: "https://www.figma.com/slides/oYPLd3JeIjhnkNyt75qfOm",
+      },
+      {
+        label: "iOS TestFlight Beta",
+        url: "https://testflight.apple.com/join/r9KCHkhc",
+      },
+    ],
+  },
+  {
     slug: "bubble-tea-awning",
     year: "Summer 2026, Fall 2026",
     role: "Mechanical Engineer",
