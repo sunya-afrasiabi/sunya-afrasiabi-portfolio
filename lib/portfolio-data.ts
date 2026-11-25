@@ -163,10 +163,6 @@ export const projects: Project[] = [
     ],
     links: [
       {
-        label: "Try Live Arena",
-        url: "https://play.206.189.237.157.sslip.io/homer",
-      },
-      {
         label: "GitHub Repository",
         url: "https://github.com/sunya-afrasiabi/MeNIN",
       },
@@ -175,16 +171,8 @@ export const projects: Project[] = [
         url: "https://devpost.com/software/menin",
       },
       {
-        label: "Watch Demo Video",
-        url: "https://youtu.be/gvGEeuahLdE",
-      },
-      {
         label: "Figma Stage Log Deck",
         url: "https://www.figma.com/slides/oYPLd3JeIjhnkNyt75qfOm",
-      },
-      {
-        label: "iOS TestFlight Beta",
-        url: "https://testflight.apple.com/join/r9KCHkhc",
       },
     ],
   },
