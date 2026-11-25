@@ -21,7 +21,7 @@ export default function HomePage() {
           <h1 className="max-w-3xl text-balance font-heading text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
             {profile.name}
           </h1>
-          <div className="relative size-36 shrink-0 overflow-hidden rounded-full border border-border sm:size-40 lg:size-48"> 
+          <div className="relative size-36 shrink-0 overflow-hidden rounded-full border border-border sm:size-40 lg:size-48">
             <Image
               src="/sunya-profile.jpg"
               alt={`Portrait of ${profile.name}`}
@@ -34,11 +34,11 @@ export default function HomePage() {
         </div>
         <div className="mt-10 grid gap-8 border-t border-border pt-8 md:grid-cols-[1.5fr_1fr]">
           <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
-            Hey there! I'm a mechanical engineering and philosophy student at the University of Pennsylvania.
+            Hey there! I&apos;m a mechanical engineering and philosophy student at the University of Pennsylvania.
             My interests range from soft robotics and mechanics of materials to philosophy, logic,
             and the role of technology in national defense and aerospace applications.
           </p>
-          
+
           <div className="flex flex-col items-start gap-3 md:items-end">
             <Link
               href="/projects"
@@ -47,7 +47,7 @@ export default function HomePage() {
               See selected work
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
             </Link>
-            
+
             <Link
               href="/about"
               className="group inline-flex items-center gap-2 font-sans text-sm font-medium uppercase tracking-widest text-foreground transition-colors hover:text-primary"
@@ -75,60 +75,89 @@ export default function HomePage() {
               Current Focus
             </span>
             <h2 className="mt-3 text-balance font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              What I'm Working On
+              What I&apos;m Working On
             </h2>
           </div>
         </div>
-        
+
         <div className="grid gap-6 md:grid-cols-2">
           {/* Box 1 */}
-          <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
-            <div className="flex-1">
-              <h3 className="font-semibold text-foreground">
-                Bio-Inspired Dragonfly Wing Morphing
-              </h3>
-              <p className="mt-1 font-sans text-xs text-muted-foreground">
-                Ling Li Lab, University of Pennsylvania
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Currently designing and modeling a bio-inspired wing morphing
-                structure using Grasshopper and Rhino, for aerospace and other materials applications, to be printed at Cornell
-                University using powder-based 3D printers.
-              </p>
-            </div>
-            
+          <div className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card text-card-foreground shadow-sm transition-colors hover:border-primary">
             <Link
               href="/projects/dragonfly-wing"
-              className="group mt-6 inline-flex w-fit items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
+              className="block overflow-hidden border-b border-border bg-secondary"
             >
-              Learn more
-              <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              <Image
+                src="/projects/lingli/dragonfly.jpg"
+                alt="Bio-Inspired Dragonfly Wing Morphing"
+                width={800}
+                height={600}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              />
             </Link>
+            <div className="flex flex-1 flex-col p-6">
+              <div className="flex-1">
+                <h3 className="font-semibold text-foreground">
+                  Bio-Inspired Dragonfly Wing Morphing
+                </h3>
+                <p className="mt-1 font-sans text-xs text-muted-foreground">
+                  Ling Li Lab, University of Pennsylvania
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Currently designing and modeling a bio-inspired wing morphing
+                  structure using Grasshopper and Rhino, for aerospace and other materials applications, to be printed at Cornell
+                  University using powder-based 3D printers.
+                </p>
+              </div>
+
+              <Link
+                href="/projects/dragonfly-wing"
+                className="group/link mt-6 inline-flex w-fit items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
+              >
+                Learn more
+                <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-0.5" aria-hidden="true" />
+              </Link>
+            </div>
           </div>
 
-{/* Box 2 */}
-          <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
-            <div className="flex-1">
-              <h3 className="font-semibold text-foreground">
-                Stirling Engine
-              </h3>
-              <p className="mt-1 font-sans text-xs text-muted-foreground">
-                MEAM 2010, University of Pennsylvania
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                Designing in SolidWorks and machining a custom UFO-themed
-                Stirling engine from steel, brass, and aluminum in Penn&apos;s
-                precision machining laboratory using lathe, mill, and CNC
-                operations.
-              </p>
-            </div>
+          {/* Box 2 */}
+          <div className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card text-card-foreground shadow-sm transition-colors hover:border-primary">
             <Link
               href="/projects/stirling-engine"
-              className="group mt-6 inline-flex w-fit items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
+              className="block overflow-hidden border-b border-border bg-secondary"
             >
-              Learn more
-              <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              <Image
+                src="/projects/stirling-engine/iso.jpg"
+                alt="Stirling Engine"
+                width={800}
+                height={600}
+                className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              />
             </Link>
+            <div className="flex flex-1 flex-col p-6">
+              <div className="flex-1">
+                <h3 className="font-semibold text-foreground">
+                  Stirling Engine
+                </h3>
+                <p className="mt-1 font-sans text-xs text-muted-foreground">
+                  MEAM 2010, University of Pennsylvania
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Designing in SolidWorks and machining a custom UFO-themed
+                  Stirling engine from steel, brass, and aluminum in Penn&apos;s
+                  precision machining laboratory using lathe, mill, and CNC
+                  operations.
+                </p>
+              </div>
+
+              <Link
+                href="/projects/stirling-engine"
+                className="group/link mt-6 inline-flex w-fit items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
+              >
+                Learn more
+                <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-0.5" aria-hidden="true" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -178,7 +207,7 @@ export default function HomePage() {
             <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
           </Link>
         </div>
-        
+
         <div className="divide-y border-b border-border divide-border">
           {selectedWriting.map((item) => (
             <article key={item.slug} className="py-6 sm:py-8 first:pt-0">
