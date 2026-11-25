@@ -66,8 +66,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ================= WHAT I'M WORKING ON SECTION ================= */}
+{/* ================= WHAT I'M WORKING ON SECTION ================= */}
       <section className="mx-auto max-w-5xl px-6 pb-24 lg:px-8">
         <div className="mb-10 flex flex-col gap-4 border-t border-border pt-6">
           <div>
@@ -80,8 +79,8 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
-          {/* Box 1 */}
+        <div className="grid gap-6 md:grid-cols-3">
+          {/* Box 1: Dragonfly Wing */}
           <div className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card text-card-foreground shadow-sm transition-colors hover:border-primary">
             <Link
               href="/projects/dragonfly-wing"
@@ -105,8 +104,9 @@ export default function HomePage() {
                 </p>
                 <p className="mt-2 text-sm text-muted-foreground">
                   Currently designing and modeling a bio-inspired wing morphing
-                  structure using Grasshopper and Rhino, for aerospace and other materials applications, to be printed at Cornell
-                  University using powder-based 3D printers.
+                  structure using Grasshopper and Rhino, for aerospace and other
+                  materials applications, to be printed at Cornell University
+                  using powder-based 3D printers.
                 </p>
               </div>
 
@@ -120,7 +120,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Box 2 */}
+          {/* Box 2: Stirling Engine */}
           <div className="group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card text-card-foreground shadow-sm transition-colors hover:border-primary">
             <Link
               href="/projects/stirling-engine"
@@ -157,6 +157,30 @@ export default function HomePage() {
                 Learn more
                 <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover/link:translate-x-0.5" aria-hidden="true" />
               </Link>
+            </div>
+          </div>
+
+          {/* Box 3: SubVysion (Text-only, no image or link) */}
+          <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
+            <div className="flex-1">
+              <span className="inline-block font-sans text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
+                Nov 2026 — Present
+              </span>
+              <h3 className="mt-2 font-semibold text-foreground">
+                Hardware Engineer
+              </h3>
+              <p className="mt-1 font-sans text-xs text-muted-foreground">
+                SubVysion (YC S26)
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Currently working as a Hardware Engineer at SubVysion, leading
+                end-to-end mechanical hardware development for a
+                field-deployable sensing system. I am designing and building an
+                integrated platform for ZED stereo-camera and GNSS antenna
+                deployment to enable real-world spatial data collection—owning
+                ideation, component procurement, CAD, fabrication, assembly, and
+                testing.
+              </p>
             </div>
           </div>
         </div>
