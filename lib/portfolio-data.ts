@@ -135,7 +135,7 @@ export const projects: Project[] = [
     year: "Fall 2026",
     role: "Co-Creator | Cal Hacks 13.0",
     teamSize: "3",
-    title: "MeNIN: Live Voice Poetry Arena Judged by Homer",
+    title: "MeNIN",
     description:
       "A live multiplayer voice-poetry battle and Greek games arena where a laptop browser hosts the stage, each player's iPhone acts as a hands-free mic and motion controller, and Homer judges verses out loud in real time.",
     longDescription: [
