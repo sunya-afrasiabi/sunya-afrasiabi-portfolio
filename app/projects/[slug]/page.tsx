@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react"
-import { projects } from "@/lib/portfolio-data"
+import { ArrowLeft, ArrowUpRight, ExternalLink, Gauge } from "lucide-react"
+import { projects, type ProjectMedia } from "@/lib/portfolio-data"
 import { ProjectGallery } from "@/components/project-gallery"
 
 export function generateStaticParams() {
@@ -33,12 +33,12 @@ export default async function ProjectDetailPage({
   if (!project) notFound()
 
   const others = projects.filter((p) => p.slug !== project.slug).slice(0, 2)
-  
+
   const isPortraitProject = project.slug === "butane-rocket-targeting"
 
   // Aggregate all media into a single array of structured objects
-  const mediaItems: { src: string; alt: string; caption?: string }[] = []
-  
+  const mediaItems: ProjectMedia[] = []
+
   if (project.gallery && project.gallery.length > 0) {
     mediaItems.push(...project.gallery)
   } else {
@@ -83,10 +83,10 @@ export default async function ProjectDetailPage({
 
       {/* DYNAMIC MEDIA GALLERY */}
       {mediaItems.length > 0 && (
-        <ProjectGallery 
-          items={mediaItems} 
-          title={project.title} 
-          isPortrait={isPortraitProject} 
+        <ProjectGallery
+          items={mediaItems}
+          title={project.title}
+          isPortrait={isPortraitProject}
         />
       )}
 
@@ -111,7 +111,35 @@ export default async function ProjectDetailPage({
 
         {/* ADDITIONAL INFO (SIDEBAR) */}
         <div className="space-y-8">
-          
+          {/* IN-PROGRESS PERFORMANCE PLACEHOLDER BLOCK */}
+          {project.inProgressMetric && (
+            <aside className="h-fit rounded-md border border-dashed border-primary/50 bg-card p-6">
+              <div className="flex items-center justify-between gap-2">
+                <h2 className="inline-flex items-center gap-2 font-sans text-xs uppercase tracking-widest text-muted-foreground">
+                  <Gauge className="size-4 text-primary" aria-hidden="true" />
+                  {project.inProgressMetric.label}
+                </h2>
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-2.5 py-0.5 font-sans text-[11px] font-medium uppercase tracking-wider text-primary">
+                  <span className="size-1.5 animate-pulse rounded-full bg-primary" />
+                  In Progress
+                </span>
+              </div>
+
+              <p className="mt-4 font-heading text-3xl font-semibold tracking-tight text-foreground">
+                {project.inProgressMetric.value}
+              </p>
+              <p className="mt-1 font-sans text-xs uppercase tracking-wider text-muted-foreground">
+                {project.inProgressMetric.status}
+              </p>
+
+              {project.inProgressMetric.note && (
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {project.inProgressMetric.note}
+                </p>
+              )}
+            </aside>
+          )}
+
           {/* PROJECT SPECS */}
           <aside className="h-fit rounded-md border border-border bg-card p-6">
             <h2 className="font-sans text-xs uppercase tracking-widest text-muted-foreground">
@@ -122,21 +150,21 @@ export default async function ProjectDetailPage({
                 <dt className="text-muted-foreground">Timeline</dt>
                 <dd className="mt-1 font-medium text-foreground">{project.year}</dd>
               </div>
-              
+
               {project.role && (
                 <div>
                   <dt className="text-muted-foreground">Role</dt>
                   <dd className="mt-1 font-medium text-foreground">{project.role}</dd>
                 </div>
               )}
-              
+
               {"teamSize" in project && project.teamSize && (
                 <div>
                   <dt className="text-muted-foreground">Team Size</dt>
                   <dd className="mt-1 font-medium text-foreground">{String(project.teamSize)}</dd>
                 </div>
               )}
-              
+
               {project.tags && project.tags.length > 0 && (
                 <div>
                   <dt className="text-muted-foreground">Tools & Skills</dt>
