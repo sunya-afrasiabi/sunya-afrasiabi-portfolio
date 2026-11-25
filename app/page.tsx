@@ -159,31 +159,35 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-
-          {/* Box 3: SubVysion (Text-only, no image or link) */}
-          <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
-            <div className="flex-1">
-              <span className="inline-block font-sans text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
-                Nov 2026 — Present
-              </span>
-              <h3 className="mt-2 font-semibold text-foreground">
-                Hardware Engineer
-              </h3>
-              <p className="mt-1 font-sans text-xs text-muted-foreground">
-                SubVysion (YC S26)
-              </p>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Currently working as a Hardware Engineer at SubVysion, leading
-                end-to-end mechanical hardware development for a
-                field-deployable sensing system. I am designing and building an
-                integrated platform for ZED stereo-camera and GNSS antenna
-                deployment to enable real-world spatial data collection—owning
-                ideation, component procurement, CAD, fabrication, assembly, and
-                testing.
-              </p>
+{/* Box 3: SubVysion */}
+          <div className="flex h-full flex-col overflow-hidden rounded-lg border border-border bg-card text-card-foreground shadow-sm">
+            <div className="overflow-hidden border-b border-border bg-black">
+              <Image
+                src="/subvysion.logo.png"
+                alt="SubVysion logo"
+                width={800}
+                height={600}
+                className="aspect-[4/3] w-full object-contain p-6"
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-6">
+              <div className="flex-1">
+                <h3 className="font-semibold text-foreground">
+                  Hardware Engineer
+                </h3>
+                <p className="mt-1 font-sans text-xs text-muted-foreground">
+                  SubVysion (YC S26) · Nov 2026 — Present
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Currently leading end-to-end mechanical hardware development
+                  for a field-deployable sensing system—designing and building
+                  an integrated platform for ZED stereo-camera and GNSS antenna
+                  deployment across ideation, procurement, CAD, fabrication,
+                  assembly, and testing.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
       </section>
 
       {/* ================= SELECTED PROJECTS SECTION ================= */}
