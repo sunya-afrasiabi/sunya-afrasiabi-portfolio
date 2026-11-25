@@ -93,7 +93,7 @@ export const projects: Project[] = [
     slug: "stirling-engine",
     year: "Fall 2026",
     role: "MEAM 2010",
-    title: "UFO-Inspired Stirling Engine",
+    title: "Stirling Engine",
     description:
       "Designed in SolidWorks and machined from steel, brass, and aluminum in Penn's precision machining laboratory with a custom UFO-inspired bedplate and spiral flywheel.",
     longDescription: [
