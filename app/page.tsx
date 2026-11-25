@@ -106,21 +106,24 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Box 2 */}
+{/* Box 2 */}
           <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
             <div className="flex-1">
               <h3 className="font-semibold text-foreground">
-                Orble: Automated Vending Machine
+                UFO-Inspired Stirling Engine
               </h3>
               <p className="mt-1 font-sans text-xs text-muted-foreground">
-                Orble, Munch Industries Inc.
+                MEAM 2010, University of Pennsylvania
               </p>
               <p className="mt-2 text-sm text-muted-foreground">
-                Currently designing and manufacturing the exterior framework, awning, and high-visibility signage for deployment at 30th Street Station using a hybrid workflow of 3D printing, laser-cut acrylics, and custom mounting solutions.
+                Designing in SolidWorks and machining a custom UFO-themed
+                Stirling engine from steel, brass, and aluminum in Penn&apos;s
+                precision machining laboratory using lathe, mill, and CNC
+                operations.
               </p>
             </div>
             <Link
-              href="/projects/bubble-tea-awning"
+              href="/projects/stirling-engine"
               className="group mt-6 inline-flex w-fit items-center text-sm font-medium text-foreground transition-colors hover:text-primary"
             >
               Learn more
