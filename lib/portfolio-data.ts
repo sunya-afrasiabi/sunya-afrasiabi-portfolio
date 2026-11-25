@@ -103,7 +103,7 @@ export const projects: Project[] = [
     ],
     tags: ["SolidWorks", "CNC Machining", "Lathe & Mill", "DFM"],
     image: "/projects/stirling-engine/iso.jpg",
-    featured: false,
+    featured: true,
     gallery: [
       {
         src: "/projects/stirling-engine/iso.jpg",
@@ -325,7 +325,7 @@ export const projects: Project[] = [
     teamSize: "10",
     tags: ["Proposal Writing", "Systems Engineering", "Materials Science"],
     image: "/projects/lspace/npwee.certificate.jpg",
-    featured: true,
+    featured: false,
     gallery: [
       {
         src: "/projects/lspace/npwee.certificate.jpg",
