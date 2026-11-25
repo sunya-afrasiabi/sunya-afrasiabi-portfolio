@@ -144,7 +144,7 @@ export const projects: Project[] = [
       "Each round, Homer writes a fresh Bronze Age theme and deals three relevant Homeric formulas ranked in real time by Moss from a 180-phrase bank—nearly a third of which was mined from Project Gutenberg translations via a custom Apify Actor (Epithet Miner). Claude Opus 5.5 streams structured judgments on Image, Answer, and Craft in ~1.0 s (p50), paired with a deterministic CMU Pronouncing Dictionary stress scanner for lesson rhythm scoring and a Fetch.ai Agentverse integration for asynchronous play.",
     ],
     tags: ["SpacetimeDB", "Voice AI", "FastAPI", "SwiftUI"],
-    image: "/projects/menin/cover.jpg",
+    image: "/projects/menin/Homer.png",
     hideHeroImage: true,
     featured: true,
     gallery: [
