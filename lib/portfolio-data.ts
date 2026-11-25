@@ -13,9 +13,10 @@ export const profile = {
   },
 }
 export type ProjectMedia = {
-  src: string
+  src?: string
   alt: string
   caption?: string // Optional: only displays if you provide it!
+  isPlaceholder?: boolean
 }
 
 export type Project = {
@@ -34,7 +35,13 @@ export type Project = {
   links?: { label: string; url: string }[]
   videoUrl?: string
   hideHeroImage?: boolean
-  gallery?: ProjectMedia[] // <-- Changed from string[] to ProjectMedia[]
+  gallery?: ProjectMedia[]
+  inProgressMetric?: {
+    label: string
+    value: string
+    status: string
+    note?: string
+  }
 }
 
 export const projects: Project[] = [
@@ -83,8 +90,49 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "stirling-engine",
+    year: "Fall 2026",
+    role: "MEAM 2010",
+    title: "UFO-Inspired Stirling Engine",
+    description:
+      "Designed in SolidWorks and machined from steel, brass, and aluminum in Penn's precision machining laboratory with a custom UFO-inspired bedplate and spiral flywheel.",
+    longDescription: [
+      "For MEAM 2010, I designed and fabricated a functional Stirling engine inspired by UFO imagery. I customized the bedplate into a UFO silhouette, where the abduction beam section serves as the structural feature anchoring the UFO profile to the base. To carry the theme across the rotating hardware, I designed the flywheel spokes to create the visual effect of spiraling light in the background while in motion.",
+      "Before stepping into the shop, I created a full assembly of the engine in SolidWorks to verify part geometry, clearances, and mechanical fit. Every physical component was manufactured by me in the University of Pennsylvania's precision machining laboratory using steel, brass, and aluminum across lathe, mill, and CNC operations. While the final manufactured engine reflects small design decisions that differ from the initial CAD assembly, the core functionality remains the same.",
+      "Once final assembly and testing are complete, I plan to finish the engine by polishing the machined metal surfaces.",
+    ],
+    tags: ["SolidWorks", "CNC Machining", "Lathe & Mill", "DFM"],
+    image: "/projects/stirling-engine/iso.jpg",
+    featured: false,
+    gallery: [
+      {
+        src: "/projects/stirling-engine/iso.jpg",
+        alt: "Isometric SolidWorks render of the UFO-inspired Stirling engine",
+        caption:
+          "This is an isometric rendered view of my engine. I created a full assembly of the engine on SolidWorks. The final manufactured engine reflects small design decisions that differ from what is represented here, but the functionality is the same.",
+      },
+      {
+        alt: "Placeholder for finished engine image",
+        caption: "Placeholder for finished engine image",
+        isPlaceholder: true,
+      },
+    ],
+    inProgressMetric: {
+      label: "Final Engine Speed",
+      value: "TBD RPM",
+      status: "In Progress — Testing Pending",
+      note: "Final operating speed (RPM) will be added after assembly, polishing, and testing.",
+    },
+    outcomes: [
+      "Created a full multi-part Stirling engine assembly in SolidWorks prior to fabrication.",
+      "Manufactured all components from steel, brass, and aluminum using lathe, mill, and CNC operations in Penn's precision machining laboratory.",
+      "Integrated custom UFO-themed geometry—including a UFO bedplate, tractor-beam base mount, and spiral-spoked flywheel—while preserving full mechanical function.",
+      "Planned surface finish: polished metal across steel, brass, and aluminum components.",
+    ],
+  },
+  {
     slug: "bubble-tea-awning",
-    year: "Current",
+    year: "Summer 2026, Fall 2026",
     role: "Mechanical Engineer",
     title: "Orble: Automated Vending Machine",
     description:
