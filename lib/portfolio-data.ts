@@ -103,7 +103,7 @@ export const projects: Project[] = [
     ],
     tags: ["SolidWorks", "CNC Machining", "Lathe & Mill", "DFM"],
     image: "/projects/stirling-engine/iso.jpg",
-    featured: true,
+    featured: false,
     gallery: [
       {
         src: "/projects/stirling-engine/iso.jpg",
