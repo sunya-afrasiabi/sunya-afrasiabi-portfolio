@@ -487,11 +487,19 @@ export type Role = {
 
 export const roles: Role[] = [
   {
-    period: "July 2026 - Present",
+    period: "Nov 2026 - Present",
+    title: "Hardware Engineer",
+    org: "SubVysion (YC S26)",
+    description:
+      "Lead end-to-end mechanical hardware development of a field-deployable sensing system, designing and building an integrated platform for ZED stereo-camera and GNSS antenna deployment to enable real-world spatial data collection; own ideation, component procurement, CAD, fabrication, assembly, and testing.",
+    category: "Technical",
+  },
+  {
+    period: "July 2026 - Nov 2026",
     title: "Mechanical Engineer",
     org: "Munch Industries Inc",
     description:
-      "Design and fabricate the awning and structural framework for Orble, an automated boba tea vending machine startup, using SolidWorks, laser cutting, 3D printing, and PVC fabrication.",
+      "Designed and fabricated the awning and structural framework for Orble, an automated boba tea vending machine startup, using SolidWorks, laser cutting, 3D printing, and PVC fabrication.",
     category: "Technical",
   },
   {
