@@ -110,7 +110,7 @@ export default function HomePage() {
           <div className="flex h-full flex-col rounded-lg border border-border bg-card p-6 text-card-foreground shadow-sm">
             <div className="flex-1">
               <h3 className="font-semibold text-foreground">
-                UFO-Inspired Stirling Engine
+                Stirling Engine
               </h3>
               <p className="mt-1 font-sans text-xs text-muted-foreground">
                 MEAM 2010, University of Pennsylvania
